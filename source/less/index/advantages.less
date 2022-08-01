@@ -5,7 +5,7 @@
 
 .advantages__wrapper {
   width: @mobile-container;
-  margin: 0 auto;
+  padding: 0 30px;
   margin-bottom: 58px;
 }
 
@@ -19,12 +19,14 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  // justify-content: space-between;
+  min-height: 90px;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 34px;
   }
-  min-height: 90px;
 }
 
 .advantages__description {
@@ -36,6 +38,10 @@
 
 .advantages__icon {
   fill: #62d0ba;
+  position: absolute;
+  top: 0;
+  left: 22px;
+  transform: translateX(-50%);
 }
 
 .advantages__list {

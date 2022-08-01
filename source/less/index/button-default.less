@@ -1,8 +1,9 @@
 .button-default {
   .open-sans-bold();
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
   background-color: #ffffff;
   color: #444444;
   font-size: 18px;
@@ -10,7 +11,26 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-style: none;
+  border: none;
   outline-offset: -2px;
-  outline: 2px solid #000000;
+  outline: 2px solid #444444;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #ffffff;
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+  }
 }

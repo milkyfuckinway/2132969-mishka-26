@@ -1,17 +1,28 @@
-.product-of-the-week__wrapper {
+.product-of-the-week {
   display: flex;
   flex-direction: column;
+
+  &::after {
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    height: 6px;
+    width: auto;
+    margin-top: 36px;
+    margin-bottom: 31px;
+  }
+}
+
+.product-of-the-week__wrapper {
   width: @mobile-container;
-  padding-bottom: 36px;
+  padding: 0 30px;
   position: relative;
   margin: 0 auto;
 }
 
 .product-of-the-week__title {
   .open-sans-bold();
-  width: @mobile-container;
-  margin: 0 auto;
-  margin-bottom: 4px;
+  margin: 0;
+  padding-bottom: 4px;
   font-size: 25px;
   line-height: 30px;
   text-align: left;
@@ -19,7 +30,7 @@
 
 .product-of-the-week__sign {
   .open-sans-bold();
-  margin-bottom: 18px;
+  padding-bottom: 18px;
   color: rgba(99, 209, 187, 1);
   font-size: 17px;
   line-height: 20px;
@@ -31,7 +42,7 @@
   .open-sans();
   font-size: 15px;
   line-height: 24px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 20px;
 }
 

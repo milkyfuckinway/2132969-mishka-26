@@ -1,0 +1,117 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 50vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 150;
+  width: @mobile;
+}
+
+.modal-container__wrapper {
+  background-color: #ffffff;
+  width: @mobile-container;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container__title {
+  .open-sans-bold();
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 28px 0 14px 0;
+}
+
+.modal-container__description {
+  .open-sans();
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.modal-container__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container__buttons {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: 0;
+}
+
+.modal-container__buttons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-container__buttons-item {
+  grid-column: span 2;
+
+  &:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+}
+
+.modal-container__buttons-legend {
+  display: none;
+}
+
+.modal-container__input {
+  display: none;
+
+  &:checked + label {
+    border: 2px solid#62D1BA;
+  }
+}
+
+.modal-container__label {
+  .open-sans-bold();
+  font-size: 17px;
+  line-height: 16px;
+  display: flex;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid#62D1BA;
+  }
+}
+
+.modal-container__submit {
+  font-size: 17px;
+  line-height: 16px;
+  background-color: #63d1bb;
+  color: #ffffff;
+  margin-bottom: 46px;
+  outline: none;
+
+  &:hover {
+    background-color: fade(#63d1bb, 60%);
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: fade(#63d1bb, 30%);
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: fade(#63d1bb, 30%);
+    color: fade(#ffffff, 60%);
+  }
+}
