@@ -26,8 +26,15 @@
 }
 
 .social__item {
-  width: 28px;
-  height: 22px;
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: fade(#46c1ae, 30%);
+  }
 }
 
 .social__logo {
@@ -43,6 +50,15 @@
   justify-content: space-between;
   align-items: center;
   min-height: 80px;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: fade(#46c1ae, 30%);
+  }
 }
 
 .social__developer-title {
@@ -51,16 +67,5 @@
   font-size: 19px;
   line-height: 18px;
   padding-right: 26px;
-}
-
-.social__developer-icon {
-  fill: #63d1bb;
-}
-
-.social__developer-title:hover + .social__developer-icon {
-  fill: #46c1ae;
-}
-
-.social__developer-title:active + .social__developer-icon {
-  fill: fade(#46c1ae, 30%);
+  margin: 0;
 }
