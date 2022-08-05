@@ -1,0 +1,36 @@
+.demonstration {
+  padding: 0 30px;
+}
+
+.demonstration__title {
+  .open-sans-bold();
+  padding-left: 91px;
+  font-size: 17px;
+  line-height: 24px;
+  background-image: url("");
+}
+
+.demonstration__video {
+  display: flex;
+  min-height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.demonstration__play {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(120%);
+  }
+
+  &:active {
+    transform: scale(80%);
+    opacity: 30%;
+  }
+}
