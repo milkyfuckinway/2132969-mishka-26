@@ -22,7 +22,7 @@
   flex-direction: column;
   padding: 28px 30px 46px;
   outline: 1px solid #c6c6c6;
-  box-shadow: @modal-shadow;
+  box-shadow: $modal-shadow;
 }
 
 .modal-container__title {
