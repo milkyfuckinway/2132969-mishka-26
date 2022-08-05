@@ -63,7 +63,7 @@
 }
 
 .social__developer-title {
-  .open-sans-bold();
+  @include open-sans-bold;
   color: #000000;
   font-size: 19px;
   line-height: 18px;

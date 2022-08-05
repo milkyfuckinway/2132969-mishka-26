@@ -3,7 +3,7 @@
 }
 
 .demonstration__title {
-  .open-sans-bold();
+  @include open-sans-bold;
   padding-left: 91px;
   font-size: 17px;
   line-height: 24px;

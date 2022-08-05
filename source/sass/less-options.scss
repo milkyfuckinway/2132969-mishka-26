@@ -14,17 +14,17 @@ $modal-shadow: 0 5px 10px 0 fade(#000101, 25%);
   clip: rect(0 0 0 0);
 }
 
-@mixin open-sans(){
+@mixin open-sans {
   font-family: "Open-sans", "Arial", sans-serif;
   font-weight: 400;
 }
 
-@mixin open-sans-bold(){
+@mixin open-sans-bold {
   font-family: "Open-sans", "Arial", sans-serif;
   font-weight: 700;
 }
 
-@mixin align-center(){
+@mixin align-center {
   align-items: center;
   justify-content: center;
   margin: 0 auto;

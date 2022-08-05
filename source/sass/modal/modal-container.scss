@@ -32,7 +32,7 @@
 }
 
 .modal-container__description {
-  .open-sans();
+  @include open-sans;
   font-size: 15px;
   line-height: 30px;
   text-align: center;
@@ -83,7 +83,7 @@
 }
 
 .modal-container__label {
-  .open-sans-bold();
+  @include open-sans-bold;
   font-size: 17px;
   line-height: 16px;
   display: flex;

@@ -22,8 +22,8 @@
 }
 
 .reviews__text {
+  @include open-sans;
   color: rgba(68, 68, 68, 1);
-  .open-sans();
   font-size: 15px;
   line-height: 30px;
   margin: 0;
@@ -35,14 +35,14 @@
 }
 
 .reviews__author {
-  .open-sans-bold();
+  @include open-sans-bold;
   font-size: 17px;
   line-height: 24px;
   margin: 0 auto;
 }
 
 .reviews__contacts {
-  .open-sans();
+  @include open-sans;
   font-size: 17px;
   line-height: 30px;
   margin: 0 auto;

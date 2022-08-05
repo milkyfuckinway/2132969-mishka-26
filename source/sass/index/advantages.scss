@@ -25,7 +25,7 @@
 }
 
 .advantages__description {
-  .open-sans-bold();
+  @include open-sans-bold;
   font-size: 17px;
   line-height: 20px;
   margin: 0;

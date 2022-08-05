@@ -24,7 +24,7 @@
 }
 
 .product-of-the-week__sign {
-  .open-sans-bold();
+  @include open-sans-bold;
   padding-bottom: 18px;
   color: rgba(99, 209, 187, 1);
   font-size: 17px;
@@ -34,7 +34,7 @@
 }
 
 .product-of-the-week__description {
-  .open-sans();
+  @include open-sans;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
@@ -58,7 +58,7 @@
 }
 
 .product-of-the-week__price {
-  .open-sans-bold();
+  @include open-sans-bold;
   font-size: 17px;
   line-height: 24px;
   text-align: center;

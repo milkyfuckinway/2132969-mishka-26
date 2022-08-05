@@ -36,8 +36,8 @@
 }
 
 .catalog__product-name {
+  @include open-sans-bold;
   color: #000000;
-  @include open-sans-bold();
   display: block;
   font-size: 17px;
   line-height: 24px;
@@ -48,7 +48,7 @@
 }
 
 .catalog__product-description {
-  @include open-sans();
+  @include open-sans;
   font-size: 13px;
   line-height: 30px;
   margin: 0 28px;
@@ -57,7 +57,7 @@
 }
 
 .catalog__product-price {
-  @include open-sans-bold();
+  @include open-sans-bold;
   font-size: 15px;
   margin: 0;
   line-height: 24px;

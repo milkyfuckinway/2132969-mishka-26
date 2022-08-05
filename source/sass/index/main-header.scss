@@ -10,9 +10,9 @@
 }
 
 .main-header__nav-toggle {
+  @include align-center;
   right: 0;
   display: flex;
-  .align-center();
   padding: 32px 31px 33px 31px;
   border: none;
   background: none;
@@ -24,6 +24,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  box-shadow: @menu-shadow;
+  box-shadow: $menu-shadow;
   z-index: 101;
 }
