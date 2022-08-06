@@ -1,7 +1,6 @@
 $main-text-color: #000000;
 $additional-text-color: #444444;
 $brand-color: #63d1bb;
-$color: #59d5bc;
 // menu buttons
 $menu-button-font-color: #ffffff;
 // menu button left
@@ -20,6 +19,9 @@ $additional-menu-button-decor-active-color: rgba(#149080, 30%);
 $product-of-the-week-sign-color: $brand-color;
 $product-of-the-week-table-divider-color: #ececec;
 $product-of-the-week-price-color: #444444;
+// advantages
+$advantages-text-color: $main-text-color;
+$advantages-icon-color: $brand-color;
 // default button
 $default-button-background-color: #ffffff;
 $default-button-text-color: #444444;
@@ -33,8 +35,6 @@ $default-button-text-disabled-color: rgba(#000000, 30%);
 $default-button-stroke-disabled-color: rgba(#000000, 10%);
 $additional-color: #f1f1f1;
 $color-background: #ffffff;
-$default-button-stroke-color: #444444;
-$default-button-text-color: #444444;
 $form-color: #62d1ba;
 $catalog-border-color: #ececec;
 // footer-logo
@@ -75,6 +75,32 @@ $form-stroke-color-active: #62d1ba;
 $form-stroke-text-color-active: #000000;
 // map
 $map-pin-color: #6bc6b3;
+// reviews buttons
+$reviews-button-background: #ffffff;
+$reviews-stroke-color: #ececec;
+$reviews-arrow-color: #000000;
+$reviews-arrow-hover-color: rgba($reviews-arrow-color, 60%);
+$reviews-arrow-active-color: rgba($reviews-arrow-color, 30%);
+$reviews-arrow-disabled-color: rgba($reviews-arrow-color, 10%);
+// email
+$email-color: #444444;
+$email-stroke-color:#62d1ba;
+$email-hover-color: #46c1ae;
+$email-hover-stroke-color:#46c1ae;
+$email-active-color: #46c1ae;
+$email-active-stroke-color:rgba(#46c1ae, 10%);
+// socials
+$footer-socials-backgroun-color:#f1f1f1;
+$social-color: #231f20;
+$social-hover-color:#46c1ae;
+$social-active-color: rgba(#46c1ae, 30%);
+// developer
+$developer-divider: #e5e5e5;
+$developer-color:#63d1bb;
+$developer-hover-color:#46c1ae;
+$developer-active-color:rgba(#46c1ae, 30%);
+$developer-text-color: #000000;
+
 // $color: #c6c6c6;
 // $color: #f9f9f9;
 // $color: rgba(255, 255, 255, 75%);

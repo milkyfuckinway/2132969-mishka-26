@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 160px;
-  background-color: #f1f1f1;
+  background-color: $footer-socials-backgroun-color;
 }
 
 .social__list {
@@ -26,14 +26,14 @@
 }
 
 .social__item {
-  fill: #231f20;
+  fill: $social-color;
 
   &:hover {
-    fill: #46c1ae;
+    fill: $social-hover-color;
   }
 
   &:active {
-    fill: fade(#46c1ae, 30%);
+    fill: $social-active-color;
   }
 }
 
@@ -42,29 +42,32 @@
   box-sizing: content-box;
   width: 100%;
   height: 100%;
+  fill: inherit;
 }
 
 .social__developer {
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-height: 80px;
-  fill: #63d1bb;
-  margin: 0 30px;
+  fill: $developer-color;
+  border-top: 1px solid $developer-divider;
+  width: calc(100% - 60px);
+  box-sizing: border-box;
 
   &:hover {
-    fill: #46c1ae;
+    fill: $developer-hover-color;
   }
 
   &:active {
-    fill: fade(#46c1ae, 30%);
+    fill: $developer-active-color;
   }
 }
 
 .social__developer-title {
   @include open-sans-bold;
-  color: #000000;
+  color: $developer-text-color;
   font-size: 19px;
   line-height: 18px;
   margin: 0;
@@ -73,4 +76,5 @@
 
 .social__developer-icon {
   flex-shrink: 0;
+  fill: inherit;
 }

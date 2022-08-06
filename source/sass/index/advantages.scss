@@ -26,13 +26,14 @@
 
 .advantages__description {
   @include open-sans-bold;
+  color: $advantages-text-color;
   font-size: 17px;
   line-height: 20px;
   margin: 0;
 }
 
 .advantages__icon {
-  fill: #62d0ba;
+  fill: $advantages-icon-color;
 }
 
 .advantages__list {

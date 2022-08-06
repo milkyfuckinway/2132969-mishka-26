@@ -23,7 +23,7 @@
 
 .reviews__text {
   @include open-sans;
-  color: rgba(68, 68, 68, 1);
+  color: $additional-text-color;
   font-size: 15px;
   line-height: 30px;
   margin: 0;
@@ -55,9 +55,27 @@
 }
 
 .reviews__toggle-button {
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  background-color: $reviews-button-background;
+  border: 1px solid $reviews-stroke-color;
   padding: 0;
   cursor: pointer;
   height: 52px;
+  fill: $reviews-arrow-color;
+
+  &:hover {
+    fill: $reviews-arrow-hover-color;
+  }
+
+  &:active {
+    fill: $reviews-arrow-active-color;
+  }
+
+  &:disabled {
+    fill: $reviews-arrow-disabled-color;
+  }
 }
+
+.reviews__button-icon {
+  fill: inherit;
+}
+
