@@ -20,24 +20,32 @@
 
 .catalog__product-link {
   text-decoration: none;
-  color: #000000;
+  color: $additional-text-color;
   cursor: pointer;
 }
 
 .catalog__product-image {
   min-height: 195px;
   display: block;
-  background-color: #ececec;
+  background-color: $additional-color;
 }
 
 .catalog__product-about {
-  outline: 1px solid #ececec;
+  outline: 1px solid $catalog-stroke-color;
   outline-offset: -1px;
+
+  &:hover {
+    box-shadow: $catalog-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $catalog-shadow-active;
+  }
 }
 
 .catalog__product-name {
   @include open-sans-bold;
-  color: #000000;
+  color: $main-text-color;
   display: block;
   font-size: 17px;
   line-height: 24px;
@@ -53,7 +61,7 @@
   line-height: 30px;
   margin: 0 28px;
   padding-bottom: 17px;
-  box-shadow: 0 1px 0 0 #ececec;
+  box-shadow: 0 1px 0 0 $catalog-stroke-color;
 }
 
 .catalog__product-price {
@@ -62,7 +70,7 @@
   margin: 0;
   line-height: 24px;
   text-decoration: none;
-  color: #000000;
+  color: $main-text-color;
   padding: 0 0 0 30px;
   display: flex;
   min-height: 73px;
@@ -78,4 +86,18 @@
   padding: 22px 26px;
   justify-content: space-between;
   cursor: pointer;
+  fill: $catalog-button-icon-color;
+
+  &:hover {
+    fill: $catalog-button-icon-hover-color;
+  }
+
+  &:active {
+    fill: $catalog-button-icon-active-color;
+  }
+
+  &:disabled {
+    fill: $catalog-button-icon-disabled-color;
+    cursor: not-allowed;
+  }
 }

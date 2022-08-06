@@ -9,6 +9,7 @@
 
 .form-container__description {
   @include open-sans;
+  color: $additional-text-color;
   padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
