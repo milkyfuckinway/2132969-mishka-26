@@ -4,6 +4,21 @@ $additional-text-color: #444444;
 $brand-color: #63d1bb;
 $additional-color: #f1f1f1;
 $color-background: #ffffff;
+// modal;
+$modal-fade-color: rgba(#ffffff, 90%);
+$modal-background-color: #ffffff;
+$modal-stroke-color: #c6c6c6;
+$modal-button-color: rgba(#444444, 10%);
+$modal-button-hover-color: rgba(#444444, 30%);
+$modal-button-active-color: #62d1ba;
+$modal-submit-button-background-color: #63d1bb;
+$modal-submit-button-text-color: #ffffff;
+$modal-submit-button-background-hover-color: rgba(#63d1bb, 60%);
+$modal-submit-button-text-hover-color: #ffffff;
+$modal-submit-button-background-active-color: rgba(#63d1bb, 30%);
+$modal-submit-button-text-active-color: #ffffff;
+$modal-submit-button-background-disabled-color: rgba(#63d1bb, 30%);
+$modal-submit-button-text-disabled-color: rgba(#ffffff, 60%);
 // menu buttons
 $menu-button-font-color: #ffffff;
 // menu button left
@@ -124,3 +139,4 @@ $catalog-button-icon-color: rgba(#000000, 20%);
 $catalog-button-icon-hover-color: #63d1bb;
 $catalog-button-icon-active-color: rgba($user-list-icon-color-hover, 30%);
 $catalog-button-icon-disabled-color: rgba($catalog-button-icon-color, 5%);
+
