@@ -1,26 +1,85 @@
 $main-text-color: #000000;
 $additional-text-color: #444444;
 $brand-color: #63d1bb;
-$menu-button-color: #63d1bb;
 $color: #59d5bc;
+// menu buttons
+$menu-button-font-color: #ffffff;
+// menu button left
+$menu-button-color: #63d1bb;
+$menu-button-hover-color: #59d5bc;
+$menu-button-active-color: #59d5bc;
+// menu button right
 $additional-menu-button-color: #56c3b2;
-$additional-menu-button-hover: #46c1ae;
-$additional-menu-button-decor-color: #149080;
+$additional-menu-button-hover-color: #46c1ae;
+$additional-menu-button-active-color: #46c1ae;
+// menu buttons decor
+$additional-menu-button-decor-color: rgba(#149080, 50%);
+$additional-menu-button-decor-hover-color: rgba(#149080, 70%);
+$additional-menu-button-decor-active-color: rgba(#149080, 30%);
+// product of the week
+$product-of-the-week-sign-color: $brand-color;
+$product-of-the-week-table-divider-color: #ececec;
+$product-of-the-week-price-color: #444444;
+// default button
+$default-button-background-color: #ffffff;
+$default-button-text-color: #444444;
+$default-button-stroke-color: #444444;
+$default-button-background-hover-color: #444444;
+$default-button-text-hover-color: #ffffff;
+$default-button-background-active-color: #444444;
+$default-button-text-active-color: rgba(#ffffff, 30%);
+$default-button-background-disabled-color: #ffffff;
+$default-button-text-disabled-color: rgba(#000000, 30%);
+$default-button-stroke-disabled-color: rgba(#000000, 10%);
 $additional-color: #f1f1f1;
 $color-background: #ffffff;
 $default-button-stroke-color: #444444;
 $default-button-text-color: #444444;
-$color: #ececec;
-$color: #231f20;
-$color: #62d1ba;
-$color: #6bc6b3;
-$color: #c6c6c6;
-$color: #f9f9f9;
-$color: rgba(255, 255, 255, 75%);
-$color: #e5e5e5;
-$color: rgba(255, 255, 255, 0%);
-$color: #eeeeee;
-$color: rgba(0, 0, 0, 30%);
-$color: rgba(68, 68, 68, 30%);
-$color: rgba(255, 255, 255, 0.01%);
-
+$form-color: #62d1ba;
+$catalog-border-color: #ececec;
+// footer-logo
+$header-logo-color: #000000;
+$header-logo-color-hover: rgba($header-logo-color, 60%);
+$header-logo-color-active: rgba($header-logo-color, 30%);
+// big link
+$big-link-color: #000000;
+$big-link-hover-color: rgba($big-link-color, 60%);
+$big-link-active-color: rgba($big-link-color, 30%);
+// user list icon
+$user-list-icon-color: rgba(#000000, 20%);
+$user-list-icon-color-hover: #63d1bb;
+$user-list-icon-color-active: rgba($user-list-icon-color-hover, 30%);
+// social
+$social-color: #231f20;
+$social-color-hover: #46c1ae;
+$social-color-active: rgba($social-color-hover, 30%);
+// developer
+$developer-color: #63d1bb;
+$developer-color-hover: #46c1ae;
+$developer-color-active: rgba($developer-color-hover, 30%);
+// footer-logo
+$footer-logo-color: #000000;
+$footer-logo-color-hover: #46c1ae;
+$footer-logo-color-active: rgba($footer-logo-color-hover, 30%);
+// modal
+$modal-size-select-text-color:#62d1ba;
+$modal-size-select-stroke-color: rgba(#ffffff, 10%);
+$modal-size-select-stroke-color-hover:rgba(#ffffff, 30%);
+$modal-size-select-stroke-color-active: #62d1ba;
+// form
+$form-stroke-color: #000000;
+$form-stroke-text-color: rgba($form-stroke-color, 30%);
+$form-stroke-color-hover: #62d1ba;
+$form-stroke-text-color-hover: rgba($form-stroke-color, 30%);
+$form-stroke-color-active: #62d1ba;
+$form-stroke-text-color-active: #000000;
+// map
+$map-pin-color: #6bc6b3;
+// $color: #c6c6c6;
+// $color: #f9f9f9;
+// $color: rgba(255, 255, 255, 75%);
+// $color: #e5e5e5;
+// $color: rgba(255, 255, 255, 0%);
+// $color: #eeeeee;
+// $color: rgba(68, 68, 68, 30%);
+// $color: rgba(255, 255, 255, 0.01%);

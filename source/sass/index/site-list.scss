@@ -4,15 +4,14 @@
 }
 
 .site-list__item {
-  color: #000000;
   min-height: 79px;
   text-align: left;
   box-shadow: $menu-shadow;
 }
 
-.site-list__item a {
+.site-list__link {
   @include open-sans-bold;
-  color: #000000;
+  color: $big-link-color;
   text-decoration: none;
   line-height: 24px;
   font-size: 17px;
@@ -20,4 +19,12 @@
   padding-top: 28px;
   padding-bottom: 27px;
   padding-left: 76px;
+
+  &:hover {
+    color: $big-link-hover-color;
+  }
+
+  &:active {
+    color: $big-link-active-color;
+  }
 }

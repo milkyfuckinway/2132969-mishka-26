@@ -3,10 +3,20 @@
   height: 79px;
   display: flex;
   justify-content: center;
+  fill: $header-logo-color;
+
+  &:hover {
+    fill: $header-logo-color-hover;
+  }
+
+  &:active {
+    fill: $header-logo-color-active;
+  }
 }
 
 .main-header__logo {
   margin: auto;
+  fill: inherit;
 }
 
 .main-header__nav-toggle {

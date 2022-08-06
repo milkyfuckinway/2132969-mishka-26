@@ -2,17 +2,17 @@
   @include open-sans-bold;
   font-size: 27px;
   line-height: 30px;
-  color: #000000;
+  color: $main-text-color;
 }
 
 .second-title {
   @include open-sans-bold;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $main-text-color;
 }
 
 .main-title-background {
-  background-color: #f1f1f1;
+  background-color: $additional-color;
   min-height: 177px;
 }

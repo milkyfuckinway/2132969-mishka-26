@@ -1,9 +1,9 @@
 .product-appearance {
-  color: #444444;
+  color: $additional-text-color;
   font-size: 15px;
   line-height: 20px;
   min-height: 39px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $product-of-the-week-table-divider-color;
   display: flex;
   align-items: center;
 }

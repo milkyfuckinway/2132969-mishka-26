@@ -1,12 +1,11 @@
-
 .button-default {
   @include open-sans-bold;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 52px;
-  background-color: #ffffff;
-  color: #444444;
+  background-color: $default-button-background-color;
+  color: $default-button-text-color;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -14,24 +13,24 @@
   text-transform: uppercase;
   border: none;
   outline-offset: -2px;
-  outline: 2px solid #444444;
+  outline: 2px solid $default-button-stroke-color;
   padding: 0;
   cursor: pointer;
 
   &:hover {
-    background-color: #444444;
-    color: #ffffff;
+    background-color: $default-button-background-hover-color;
+    color: $default-button-text-hover-color;
   }
 
   &:active {
-    background-color: #444444;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $default-button-background-active-color;
+    color: $default-button-text-active-color;
   }
 
   &:disabled {
-    background-color: #ffffff;
-    outline: 2px solid rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.3);
+    background-color: $default-button-background-disabled-color;
+    outline: 2px solid $default-button-stroke-disabled-color;
+    color: $default-button-text-disabled-color;
     cursor: not-allowed;
   }
 }
