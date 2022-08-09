@@ -1,0 +1,36 @@
+.button-default {
+  @include open-sans-bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  background-color: $default-button-background-color;
+  color: $default-button-text-color;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline-offset: -2px;
+  outline: 2px solid $default-button-stroke-color;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $default-button-background-hover-color;
+    color: $default-button-text-hover-color;
+  }
+
+  &:active {
+    background-color: $default-button-background-active-color;
+    color: $default-button-text-active-color;
+  }
+
+  &:disabled {
+    background-color: $default-button-background-disabled-color;
+    outline: 2px solid $default-button-stroke-disabled-color;
+    color: $default-button-text-disabled-color;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,19 @@
+.form-container__title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.form-container__description {
+  @include open-sans;
+  color: $additional-text-color;
+  padding: 0 30px;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 29px;
+}

@@ -1,0 +1,141 @@
+// main colors
+$main-text-color: #000000;
+$additional-text-color: #444444;
+$brand-color: #63d1bb;
+$additional-color: #f1f1f1;
+$color-background: #ffffff;
+// modal;
+$modal-fade-color: rgba(#ffffff, 90%);
+$modal-background-color: #ffffff;
+$modal-stroke-color: #c6c6c6;
+$modal-button-color: rgba(#444444, 10%);
+$modal-button-hover-color: rgba(#444444, 30%);
+$modal-button-active-color: #62d1ba;
+$modal-submit-button-background-color: #63d1bb;
+$modal-submit-button-text-color: #ffffff;
+$modal-submit-button-background-hover-color: rgba(#63d1bb, 60%);
+$modal-submit-button-text-hover-color: #ffffff;
+$modal-submit-button-background-active-color: rgba(#63d1bb, 30%);
+$modal-submit-button-text-active-color: #ffffff;
+$modal-submit-button-background-disabled-color: rgba(#63d1bb, 30%);
+$modal-submit-button-text-disabled-color: rgba(#ffffff, 60%);
+// menu buttons
+$menu-button-font-color: #ffffff;
+// menu button left
+$menu-button-color: #63d1bb;
+$menu-button-hover-color: #59d5bc;
+$menu-button-active-color: #59d5bc;
+// menu button right
+$additional-menu-button-color: #56c3b2;
+$additional-menu-button-hover-color: #46c1ae;
+$additional-menu-button-active-color: #46c1ae;
+// menu buttons decor
+$additional-menu-button-decor-color: rgba(#149080, 50%);
+$additional-menu-button-decor-hover-color: rgba(#149080, 70%);
+$additional-menu-button-decor-active-color: rgba(#149080, 30%);
+// product of the week
+$product-of-the-week-sign-color: $brand-color;
+$product-of-the-week-table-divider-color: #ececec;
+$product-of-the-week-price-color: #444444;
+// advantages
+$advantages-text-color: $main-text-color;
+$advantages-icon-color: $brand-color;
+// default button
+$default-button-background-color: #ffffff;
+$default-button-text-color: #444444;
+$default-button-stroke-color: #444444;
+$default-button-background-hover-color: #444444;
+$default-button-text-hover-color: #ffffff;
+$default-button-background-active-color: #444444;
+$default-button-text-active-color: rgba(#ffffff, 30%);
+$default-button-background-disabled-color: #ffffff;
+$default-button-text-disabled-color: rgba(#000000, 30%);
+$default-button-stroke-disabled-color: rgba(#000000, 10%);
+// footer-logo
+$header-logo-color: #000000;
+$header-logo-color-hover: rgba($header-logo-color, 60%);
+$header-logo-color-active: rgba($header-logo-color, 30%);
+// big link
+$big-link-color: #000000;
+$big-link-hover-color: rgba($big-link-color, 60%);
+$big-link-active-color: rgba($big-link-color, 30%);
+// user list icon
+$user-list-icon-color: rgba(#000000, 20%);
+$user-list-icon-color-hover: #63d1bb;
+$user-list-icon-color-active: rgba($user-list-icon-color-hover, 30%);
+// social
+$social-color: #231f20;
+$social-color-hover: #46c1ae;
+$social-color-active: rgba($social-color-hover, 30%);
+// developer
+$developer-color: #63d1bb;
+$developer-color-hover: #46c1ae;
+$developer-color-active: rgba($developer-color-hover, 30%);
+// footer-logo
+$footer-logo-color: #000000;
+$footer-logo-color-hover: #46c1ae;
+$footer-logo-color-active: rgba($footer-logo-color-hover, 30%);
+// modal
+$modal-size-select-text-color:#62d1ba;
+$modal-size-select-stroke-color: rgba(#ffffff, 10%);
+$modal-size-select-stroke-color-hover:rgba(#ffffff, 30%);
+$modal-size-select-stroke-color-active: #62d1ba;
+// form
+$form-stroke-color: #000000;
+$form-stroke-text-color: rgba($form-stroke-color, 30%);
+$form-stroke-color-hover: #62d1ba;
+$form-stroke-text-color-hover: rgba($form-stroke-color, 30%);
+$form-stroke-color-active: #62d1ba;
+$form-stroke-text-color-active: #000000;
+// map background
+$map-pin-color: #6bc6b3;
+// reviews buttons
+$reviews-button-background: #ffffff;
+$reviews-stroke-color: #ececec;
+$reviews-arrow-color: #000000;
+$reviews-arrow-hover-color: rgba($reviews-arrow-color, 60%);
+$reviews-arrow-active-color: rgba($reviews-arrow-color, 30%);
+$reviews-arrow-disabled-color: rgba($reviews-arrow-color, 10%);
+// email
+$email-color: #444444;
+$email-stroke-color:#62d1ba;
+$email-hover-color: #46c1ae;
+$email-hover-stroke-color:#46c1ae;
+$email-active-color: #46c1ae;
+$email-active-stroke-color:rgba(#46c1ae, 10%);
+// socials
+$footer-socials-backgroun-color:#f1f1f1;
+$social-color: #231f20;
+$social-hover-color:#46c1ae;
+$social-active-color: rgba(#46c1ae, 30%);
+// developer
+$developer-divider: #e5e5e5;
+$developer-color:#63d1bb;
+$developer-hover-color:#46c1ae;
+$developer-active-color:rgba(#46c1ae, 30%);
+$developer-text-color: #000000;
+// form
+$form-section-name-color: $brand-color;
+$form-label-color: #000000;
+$form-radio-pin-color: #62d1ba;
+$form-radio-stroke-color: #444444;
+$form-radio-stroke-hover-color:#62d1ba;
+$form-radio-stroke-active-color: rgba(#000000, 30%);
+$form-radio-stroke-focus-color:#62d1ba;
+$form-radio-stroke-disabled-color: rgba(#000000, 10%);
+$form-checkbox-stroke-color: #444444;
+$form-checkbox-stroke-hover-color:#62d1ba;
+$form-checkbox-stroke-active-color: rgba(#000000, 30%);
+$form-checkbox-stroke-focus-color:#62d1ba;
+$form-checkbox-stroke-disabled-color: rgba(#000000, 10%);
+$form-input-stroke-color: #000000;
+$form-input-stroke-hover-color: #62d1ba;
+$form-input-stroke-active-color: #62d1ba;
+$form-input-stroke-focus-color: #62d1ba;
+$form-placeholder-text-color: rgba(#000000, 30%);
+// catalog
+$catalog-stroke-color: #ececec;
+$catalog-button-icon-color: rgba(#000000, 20%);
+$catalog-button-icon-hover-color: #63d1bb;
+$catalog-button-icon-active-color: rgba($user-list-icon-color-hover, 30%);
+$catalog-button-icon-disabled-color: rgba($catalog-button-icon-color, 5%);

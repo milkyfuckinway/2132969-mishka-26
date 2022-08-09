@@ -1,0 +1,6 @@
+.page__body {
+  @include open-sans;
+  margin: 0 auto;
+  // min-width: $mobile;
+  width: $mobile;
+}

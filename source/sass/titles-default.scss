@@ -1,0 +1,18 @@
+.main-title {
+  @include open-sans-bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $main-text-color;
+}
+
+.second-title {
+  @include open-sans-bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $main-text-color;
+}
+
+.main-title-background {
+  background-color: $additional-color;
+  min-height: 177px;
+}

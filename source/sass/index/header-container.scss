@@ -1,0 +1,76 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container__title {
+  text-align: center;
+  padding: 73px 30px 120px;
+  margin: 0;
+  background-image: url("../img/hero-mobile@2x 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-container__menu-buttons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-container__menu-link {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-height: $menu-button-height;
+  padding: 0 30px;
+  align-items: center;
+  color: $menu-button-font-color;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  fill: $additional-menu-button-decor-color;
+
+  &:hover {
+    fill: $additional-menu-button-decor-hover-color;
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    fill: $additional-menu-button-decor-active-color;
+  }
+
+  &:last-child {
+    margin-bottom: 31px;
+  }
+
+  &--option-one {
+    background-color: $menu-button-color;
+  }
+
+  &--option-one:hover {
+    background-color: $menu-button-hover-color;
+    box-shadow: 0 5px 0 0 $menu-button-color;
+  }
+
+  &--option-one:active {
+    background-color: $menu-button-active-color;
+  }
+
+  &--option-two {
+    background-color: $additional-menu-button-color;
+  }
+
+  &--option-two:hover {
+    background-color: $additional-menu-button-hover-color;
+    box-shadow: 0 5px 0 0 $additional-menu-button-hover-color;
+  }
+
+  &--option-two:active {
+    background-color: $additional-menu-button-hover-color;
+  }
+}

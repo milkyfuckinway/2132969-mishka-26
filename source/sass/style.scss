@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "less-options.scss";
+@import "palette-of-colors.scss";
+@import "button-default.scss";
+@import "titles-default.scss";
+@import "index/main-header.scss";
+@import "index/main-nav.scss";
+@import "index/page__body.scss";
+@import "index/site-list.scss";
+@import "index/user-list.scss";
+@import "index/header-container.scss";
+@import "index/main-container.scss";
+@import "index/product-of-the-week.scss";
+@import "index/product-appearance.scss";
+@import "index/advantages.scss";
+@import "index/reviews.scss";
+@import "index/contacts.scss";
+@import "index/main-footer.scss";
+@import "modal/modal-container.scss";
+@import "form/form.scss";
+@import "form/form-container.scss";
+@import "catalog/catalog.scss";
+@import "catalog/demonstration.scss";

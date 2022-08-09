@@ -1,0 +1,80 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    height: 6px;
+    width: auto;
+    margin-top: 46px;
+    margin-bottom: 18px;
+  }
+}
+
+.reviews__wrapper {
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.reviews__text {
+  @include open-sans;
+  color: $additional-text-color;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__author-section {
+  margin-bottom: 30px;
+}
+
+.reviews__author {
+  @include open-sans-bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
+.reviews__contacts {
+  @include open-sans;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.reviews__toggles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 38px;
+}
+
+.reviews__toggle-button {
+  background-color: $reviews-button-background;
+  border: 1px solid $reviews-stroke-color;
+  padding: 0;
+  cursor: pointer;
+  height: 52px;
+  fill: $reviews-arrow-color;
+
+  &:hover {
+    fill: $reviews-arrow-hover-color;
+  }
+
+  &:active {
+    fill: $reviews-arrow-active-color;
+  }
+
+  &:disabled {
+    fill: $reviews-arrow-disabled-color;
+  }
+}
+
+.reviews__button-icon {
+  fill: inherit;
+}

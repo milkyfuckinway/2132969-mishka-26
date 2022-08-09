@@ -1,0 +1,130 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  background-color: $modal-fade-color;
+  width: 100%;
+  height: 100%;
+  z-index: 150000;
+  top: 0;
+  left: 0;
+}
+
+.modal-container__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $modal-background-color;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 566px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 30px 46px;
+  outline: 1px solid $modal-stroke-color;
+  box-shadow: $modal-shadow;
+}
+
+.modal-container__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 28px 0 14px 0;
+}
+
+.modal-container__description {
+  @include open-sans;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.modal-container__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: 0;
+}
+
+.modal-container__buttons-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.modal-container__buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-container__buttons-legend {
+  display: none;
+}
+
+.modal-container__input {
+  display: none;
+
+  &:checked + label {
+    border: 2px solid $modal-button-active-color;
+  }
+}
+
+.modal-container__label {
+  @include open-sans-bold;
+  font-size: 17px;
+  line-height: 16px;
+  display: flex;
+  border: 2px solid $modal-button-color;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  min-width: 78px;
+  max-width: 112px;
+
+  &:hover {
+    border: 2px solid $modal-button-hover-color;
+  }
+
+  &:active {
+    border: 2px solid$modal-button-active-color;
+  }
+}
+
+.modal-container__submit {
+  font-size: 17px;
+  line-height: 16px;
+  background-color: $modal-submit-button-background-color;
+  color: $modal-submit-button-text-color;
+  outline: none;
+  min-width: 260px;
+  max-width: 350px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $modal-submit-button-background-hover-color;
+    color: $modal-submit-button-text-hover-color;
+  }
+
+  &:active {
+    background-color: $modal-submit-button-background-active-color;
+    color: $modal-submit-button-text-active-color;
+  }
+
+  &:disabled {
+    background-color: $modal-submit-button-background-disabled-color;
+    color: $modal-submit-button-text-disabled-color;
+  }
+}
