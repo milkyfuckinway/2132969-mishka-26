@@ -1,12 +1,27 @@
 .site-list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .site-list__item {
   min-height: 79px;
   text-align: left;
   box-shadow: $menu-shadow;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
 }
 
 .site-list__link {
@@ -19,6 +34,12 @@
   padding-top: 28px;
   padding-bottom: 27px;
   padding-left: 76px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+  }
 
   &:hover {
     color: $big-link-hover-color;
