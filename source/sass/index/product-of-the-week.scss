@@ -19,6 +19,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
+  }
 }
 
 .product-of-the-week__name-container {
@@ -28,6 +32,11 @@
     place-items: center;
     margin-top: 39px;
     margin-bottom: 38px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 61px;
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -55,6 +64,12 @@
     padding-bottom: 0;
     width: 100px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: -43px;
+    transform: translateX(-100%);
   }
 }
 
@@ -85,6 +100,11 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
   }
 }
 

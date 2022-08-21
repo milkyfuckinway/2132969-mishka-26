@@ -1,0 +1,32 @@
+.additional-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 3;
+  }
+}
+
+.additional-list__item {
+  display: flex;
+  margin-right: 45px;
+  place-items: center;
+}
+
+.additional-list__link {
+  @include open-sans-bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $main-text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $big-link-hover-color;
+  }
+
+  &:active {
+    color: $big-link-active-color;
+  }
+}
