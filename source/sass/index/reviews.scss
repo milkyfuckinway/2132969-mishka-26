@@ -14,11 +14,29 @@
 
 .reviews__wrapper {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .reviews__title {
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    display: flex;
+    width: 300px;
+    margin: 0;
+    order: 1;
+    padding-top: 83px;
+  }
 }
 
 .reviews__text {
@@ -27,11 +45,24 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 61px;
+    margin: 0;
+    order: 3;
+    width: 100%;
+  }
 }
 
 .reviews__author-section {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    margin-bottom: 47px;
+  }
 }
 
 .reviews__author {
@@ -52,6 +83,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    width: 137px;
+    place-items: center;
+  }
 }
 
 .reviews__toggle-button {
@@ -61,6 +98,11 @@
   cursor: pointer;
   height: 52px;
   fill: $reviews-arrow-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    height: 26px;
+  }
 
   &:hover {
     fill: $reviews-arrow-hover-color;
@@ -77,4 +119,13 @@
 
 .reviews__button-icon {
   fill: inherit;
+}
+
+.reviews__leave-feedback-button {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 175px;
+    height: 50px;
+    margin-top: auto;
+  }
 }

@@ -6,7 +6,11 @@ $menu-shadow: 0 1px 0 rgba(236, 236, 236, 1), inset 0 1px 0  rgba(236, 236, 236,
 $catalog-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.1);
 $catalog-shadow-active: 0 3px 5px rgba(0, 0, 0, 0.1);
 $modal-shadow: 0 5px 10px 0 rgba(#000101, 25%);
-$menu-button-height: 103px;
+
+* {
+  outline: 2px solid rgba(#000000, 10%);
+  outline-offset: -1px;
+}
 
 .visually-hidden {
   position: absolute;

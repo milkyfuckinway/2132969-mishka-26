@@ -1,6 +1,11 @@
 .header-container {
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .header-container__title {
@@ -11,19 +16,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #f9f9f9;
 }
 
 .header-container__menu-buttons {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header-container__menu-link {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  min-height: $menu-button-height;
+  min-height: 103px;
   padding: 0 30px;
   align-items: center;
   color: $menu-button-font-color;
@@ -72,5 +83,14 @@
 
   &--option-two:active {
     background-color: $additional-menu-button-hover-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 119px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
