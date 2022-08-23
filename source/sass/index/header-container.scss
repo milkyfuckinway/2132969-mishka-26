@@ -8,6 +8,17 @@
   }
 }
 
+.header-container__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
 .header-container__title {
   text-align: center;
   padding: 73px 30px 120px;

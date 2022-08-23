@@ -1,22 +1,6 @@
-.advantages {
+.advantages__wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.advantages__wrapper {
-  padding: 0 30px;
-  margin-bottom: 58px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 83px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: calc(350px * 2);
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: 225px;
-  }
 }
 
 .advantages__title {
@@ -42,37 +26,37 @@
   &:nth-child(1) {
     background-image: url("../img/decor/advantages/advantages-icon-1.svg");
     background-repeat: no-repeat;
-    background-position: 4% 31%;
+    background-position: 0 35%;
   }
 
   &:nth-child(2) {
     background-image: url("../img/decor/advantages/advantages-icon-2.svg");
     background-repeat: no-repeat;
-    background-position: 0 28%;
+    background-position: 0 35%;
   }
 
   &:nth-child(3) {
     background-image: url("../img/decor/advantages/advantages-icon-3.svg");
     background-repeat: no-repeat;
-    background-position: 3% 33%;
+    background-position: 0 35%;
   }
 
   &:nth-child(4) {
     background-image: url("../img/decor/advantages/advantages-icon-4.svg");
     background-repeat: no-repeat;
-    background-position: 1% 33%;
+    background-position: 0 35%;
   }
 
   &:nth-child(5) {
     background-image: url("../img/decor/advantages/advantages-icon-5.svg");
     background-repeat: no-repeat;
-    background-position: 0 30%;
+    background-position: 0 35%;
   }
 
   &:nth-child(6) {
     background-image: url("../img/decor/advantages/advantages-icon-6.svg");
     background-repeat: no-repeat;
-    background-position: 1% 30%;
+    background-position: 0 35%;
   }
 
   @media (min-width: $tablet-width) {
@@ -130,5 +114,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(350px * 2);
   }
 }

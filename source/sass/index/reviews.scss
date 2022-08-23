@@ -12,21 +12,12 @@
   }
 }
 
-.reviews__wrapper {
-  margin: 0 30px;
-
+.reviews__container {
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-left: 225px;
-    margin-right: 50px;
   }
 }
 

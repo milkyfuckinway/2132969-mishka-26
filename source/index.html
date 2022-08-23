@@ -11,6 +11,7 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
+      <div class="main-nav__wrapper">
     <div class="main-nav__logo">
       <a class="main-nav__link" href="index.html">
         <svg class="main-header__icon" aria-label="Логотип магазина Мишка." height="35" viewbox="0 0 86 35" width="86"
@@ -53,8 +54,10 @@
         </li>
       </ul>
       <span class="main-nav__label">Бесплатная доставка по России</span>
+      </div>
     </nav>
     <div class="header-container">
+      <div class="header-container__wrapper">
           <h1 class="header-container__title main-title">Милые штуки ручной<br> работы для дома</h1>
       <div class="header-container__menu-buttons">
       <a class="header-container__menu-link header-container__menu-link--option-one" href="#"><svg class="header-container__menu-icon" width="40" height="62" viewBox="0 0 40 62" xmlns="http://www.w3.org/2000/svg">
@@ -71,13 +74,15 @@
         Детские<br> игрушки</a>
     </div>
   </div>
+    </div>
   </header>
   <main class="main-container">
     <section class="product-of-the-week">
-      <div class="product-of-the-week__wrapper">
+      <div class="product-of-the-week__wrapper main-container__wrapper">
+        <div class="product-of-the-week__container main-container__container">
         <div class="product-of-the-week__name-container">
           <h2 class="product-of-the-week__title second-title">Вязаные корзинки</h2>
-          <div class="product-of-the-week__sign">Товар недели</div>
+          <div class="product-of-the-week__sign default-sign">Товар недели</div>
         </div>
         <h3 class="product-of-the-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести
           расцветках и трёх размерах.</h3>
@@ -102,9 +107,11 @@
           <button class="product-of-the-week__order button-default">Заказать</button>
         </div>
       </div>
+      </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper main-container__wrapper">
+        <div class="main-container__container">
         <h2 class="advantages__title second-title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -126,10 +133,12 @@
             <p class="advantages__description">Поставляется <br>в подарочной упаковке</p>
           </li>
         </ul>
+        </div>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper">
+      <div class="reviews__wrapper main-container__wrapper">
+        <div class="reviews__container main-container__container">
         <h2 class="reviews__title second-title">Отзывы</h2>
         <h3 class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как<br> у популярных инстамамочек.<br> В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои
@@ -154,10 +163,15 @@
         </div>
         <a class="reviews__leave-feedback-button button-default button" href="#">Написать</a>
       </div>
+      </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper main-container__wrapper">
+        <div class="contacts__container main-container__container">
+          <div class="contacts__name-container">
         <h2 class="contacts__title second-title">Контакты</h2>
+        <div class="contacts__sign default-sign"></div>
+      </div>
         <ul class="contacts__list">
           <li class="contacts__item">
             <div class="contacts__type">e-mail:</div>
@@ -170,6 +184,7 @@
         </ul>
       <div class="contacts__map"></div>
       <a class="contacts__feedback button-default button" href="#">Напишите нам</a>
+      </div>
       </div>
     </section>
   </main>
