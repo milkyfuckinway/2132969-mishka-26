@@ -19,6 +19,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    min-height: 88px;
   }
 }
 
@@ -36,7 +37,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    //
+    place-items: center;
+    padding-left: 82px;
   }
 
   &:hover {
@@ -54,7 +56,12 @@
   fill: inherit;
   position: absolute;
   left: 31px;
-  top: 31px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    //
+  }
 }
 
 
