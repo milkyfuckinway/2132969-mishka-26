@@ -9,6 +9,8 @@
 
   @media (min-width: $desktop-width) {
     order: 3;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 
@@ -19,7 +21,9 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    min-height: 88px;
+    min-height: auto;
+    min-width: 82px;
+    border-left: 1px solid #ececec;
   }
 }
 
@@ -30,8 +34,6 @@
   line-height: 24px;
   font-size: 17px;
   display: flex;
-  padding-top: 28px;
-  padding-bottom: 27px;
   padding-left: 76px;
   fill: $user-list-icon-color;
   position: relative;
@@ -49,6 +51,10 @@
   &:active {
     color: $big-link-active-color;
     fill: $user-list-icon-color-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
   }
 }
 

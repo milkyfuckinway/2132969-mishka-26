@@ -1,6 +1,14 @@
 .main-nav {
   z-index: 100;
   background-color: $color-background;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #ececec;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .main-nav__wrapper {
@@ -86,7 +94,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    order: 2;
+    order: 3;
+    flex-grow: 1;
   }
 }
 
@@ -102,5 +111,11 @@
     right: 0;
     bottom: 0;
     transform: translateY(100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 50%;
   }
 }
