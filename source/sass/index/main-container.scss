@@ -1,5 +1,22 @@
-// .main-container {
-//   width: $mobile-container;
-//   display: flex;
-//   flex-direction: column;
-// }
+.main-container__wrapper {
+  margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.main-container__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
+}

@@ -34,3 +34,25 @@
     cursor: not-allowed;
   }
 }
+
+.default-sign {
+  @include open-sans-bold;
+  padding-bottom: 18px;
+  color: $product-of-the-week-sign-color;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    width: 100px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: calc(175px / 2);
+    transform: translateX(-50%);
+  }
+}

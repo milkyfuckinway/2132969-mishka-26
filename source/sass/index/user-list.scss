@@ -1,12 +1,25 @@
 .user-list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
 
 .user-list__item {
   min-height: 79px;
   text-align: left;
   box-shadow: $menu-shadow;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .user-list__link {
@@ -21,6 +34,10 @@
   padding-left: 76px;
   fill: $user-list-icon-color;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
 
   &:hover {
     color: $big-link-hover-color;
@@ -38,4 +55,11 @@
   position: absolute;
   left: 31px;
   top: 31px;
+}
+
+
+.user-list__text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

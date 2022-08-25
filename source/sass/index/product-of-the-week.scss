@@ -10,27 +10,35 @@
   }
 }
 
-.product-of-the-week__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
-  position: relative;
-  margin: 0 auto;
+.product-of-the-week__name-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-top: 39px;
+    margin-bottom: 38px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 61px;
+      margin-bottom: 35px;
+    }
+  }
 }
 
 .product-of-the-week__title {
   margin: 0;
   padding-bottom: 4px;
-}
 
-.product-of-the-week__sign {
-  @include open-sans-bold;
-  padding-bottom: 18px;
-  color: $product-of-the-week-sign-color;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: left;
-  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .product-of-the-week__description {
@@ -40,18 +48,42 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    line-height: 30px;
+    margin-bottom: 48px;
+  }
 }
 
 .product-of-the-week__photo {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 334px;
+    height: 404px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .product-of-the-week__buy-section {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }
 
 .product-of-the-week__order {
@@ -70,4 +102,8 @@
 .product-of-the-week__table {
   border-spacing: 0;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }
