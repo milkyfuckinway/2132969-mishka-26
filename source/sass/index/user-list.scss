@@ -5,6 +5,8 @@
   @media (min-width: $tablet-width) {
     order: 1;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,15 +17,17 @@
 }
 
 .user-list__item {
-  min-height: 79px;
   text-align: left;
   box-shadow: $menu-shadow;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    min-height: auto;
     min-width: 82px;
+    min-height: 88px;
     border-left: 1px solid #ececec;
+    padding-right: 1px;
+    flex-grow: 1;
+    box-shadow: none;
   }
 }
 
@@ -37,6 +41,8 @@
   padding-left: 76px;
   fill: $user-list-icon-color;
   position: relative;
+  min-height: 79px;
+  place-items: center;
 
   @media (min-width: $tablet-width) {
     place-items: center;

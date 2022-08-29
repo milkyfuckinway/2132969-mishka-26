@@ -19,48 +19,61 @@
 
 .advantages__item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 83px;
+  position: relative;
 
-  &:nth-child(1) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    transform: translateY(-100%) translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  &:nth-child(1)::before {
     background-image: url("../img/decor/advantages/advantages-icon-1.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    height: 38px;
+    width: 33px;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2)::before {
     background-image: url("../img/decor/advantages/advantages-icon-2.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    height: 27px;
+    width: 47px;
+    top: -26px;
   }
 
-  &:nth-child(3) {
+  &:nth-child(3)::before {
     background-image: url("../img/decor/advantages/advantages-icon-3.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    height: 27px;
+    width: 34px;
   }
 
-  &:nth-child(4) {
+  &:nth-child(4)::before {
     background-image: url("../img/decor/advantages/advantages-icon-4.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    height: 34px;
+    width: 35px;
+    left: 20px;
   }
 
-  &:nth-child(5) {
+  &:nth-child(5)::before {
     background-image: url("../img/decor/advantages/advantages-icon-5.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    height: 23px;
+    width: 55px;
+    left: 20px;
+    top: -26px;
   }
 
-  &:nth-child(6) {
+  &:nth-child(6)::before {
     background-image: url("../img/decor/advantages/advantages-icon-6.svg");
-    background-repeat: no-repeat;
-    background-position: 0 35%;
+    width: 33px;
+    height: 32px;
+    left: 20px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
+    padding-top: 0;
     margin-bottom: 0;
 
     &:nth-child(1) {
@@ -102,18 +115,20 @@
   }
 }
 
-// .advantages__icon {
-//   fill: $advantages-icon-color;
-// }
-
 .advantages__list {
   list-style: none;
   margin: 0;
+  margin-top: 82px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 83px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 110px;
+    margin-top: 97px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {

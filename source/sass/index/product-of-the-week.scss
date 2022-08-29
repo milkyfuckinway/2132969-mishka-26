@@ -1,12 +1,26 @@
 .product-of-the-week {
   &::after {
     content: "";
-    background-image: url("../img/zigzag-line.svg");
+    background-image: url("../img/decor/wave-small-mobile.svg");
     display: block;
     height: 6px;
-    width: auto;
+    width: 100%;
     margin-top: 36px;
     margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/decor/wave-small-tablet.svg");
+      height: 17px;
+      margin-top: 52px;
+      margin-bottom: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/decor/wave-small-desktop.svg");
+      height: 23px;
+      margin-top: 73px;
+      margin-bottom: 68px;
+    }
   }
 }
 
@@ -19,7 +33,7 @@
     margin-bottom: 38px;
 
     @media (min-width: $desktop-width) {
-      margin-top: 61px;
+      margin-top: 116px;
       margin-bottom: 35px;
     }
   }
@@ -47,12 +61,19 @@
   font-size: 15px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     width: 292px;
+    font-size: 17px;
     line-height: 30px;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+    line-height: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -60,10 +81,11 @@
   display: block;
   width: 260px;
   height: 315px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 334px;
+    width: 50%;
     height: 404px;
     right: 0;
     bottom: 0;
@@ -97,6 +119,15 @@
   line-height: 24px;
   text-align: center;
   padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 57px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .product-of-the-week__table {
@@ -105,5 +136,6 @@
 
   @media (min-width: $tablet-width) {
     width: 292px;
+    margin-bottom: 5px;
   }
 }

@@ -90,17 +90,21 @@
   z-index: 101;
 
   @media (min-width: $tablet-width) {
-    // flex-grow: 1;
+    width: max-content;
   }
 
   @media (min-width: $desktop-width) {
     order: 3;
-    flex-grow: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
   }
 }
 
 .main-nav__label {
   display: none;
+  z-index: 101;
 
   @media (min-width: $tablet-width) {
     display: flex;
