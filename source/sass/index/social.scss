@@ -1,36 +1,47 @@
 .social {
   width: 100%;
   background-color: $footer-socials-backgroun-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+  }
 }
 
 .social__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   min-height: 160px;
   background-color: $footer-socials-backgroun-color;
+  padding: 0 30px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    padding: 0 50px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 122px;
     min-height: 143px;
+    padding: 0 50px;
     margin: 0 auto;
-    width: calc(100% - 100px);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    column-gap: 312px;
   }
 }
 
 .social__list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 140px;
-  min-height: 80px;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 28px 28px 28px;
+  grid-template-rows: 29px;
+  column-gap: 29px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .social__item {
@@ -58,14 +69,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
   }
 }
 
 .social__logo {
   display: block;
-  box-sizing: content-box;
-  width: 100%;
+  margin: 0 auto;
   height: 100%;
   fill: inherit;
 }
@@ -75,11 +85,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80px;
   fill: $developer-color;
-  border-top: 1px solid $developer-divider;
-  width: calc(100% - 60px);
-  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 
   &:hover {
     fill: $developer-hover-color;
@@ -87,10 +97,6 @@
 
   &:active {
     fill: $developer-active-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: auto;
   }
 }
 

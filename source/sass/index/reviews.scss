@@ -8,14 +8,14 @@
     display: block;
     height: 6px;
     width: 100%;
-    margin-top: 36px;
-    margin-bottom: 31px;
+    margin-top: 45px;
+    margin-bottom: 38px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/decor/wave-small-tablet.svg");
       height: 17px;
       margin-top: 68px;
-      margin-bottom: 46px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: $desktop-width) {
@@ -131,6 +131,7 @@
   font-size: 17px;
   line-height: 24px;
   margin: 0 auto;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -138,6 +139,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    padding-bottom: 0;
   }
 }
 
@@ -159,7 +161,7 @@
 .reviews__toggles {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50px 50px;

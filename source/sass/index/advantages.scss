@@ -1,6 +1,11 @@
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 83px;
+  }
 }
 
 .advantages__title {
@@ -128,7 +133,6 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 110px;
     margin-top: 97px;
-    margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
