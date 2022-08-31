@@ -111,6 +111,11 @@
   text-decoration: none;
 }
 
+.catalog__product-name--big-name {
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
 .catalog__product-description {
   @include open-sans;
   font-size: 13px;
