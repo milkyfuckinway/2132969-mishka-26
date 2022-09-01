@@ -1,5 +1,6 @@
 .demonstration__wrapper {
   margin: 0 30px;
+  margin-bottom: 58px;
   outline: 1px solid $catalog-stroke-color;
   outline-offset: -1px;
   display: flex;
@@ -18,6 +19,7 @@
     width: 668px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,13 +35,25 @@
 .demonstration__title {
   @include open-sans-bold;
   padding-left: 91px;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 26px;
   font-size: 17px;
   line-height: 24px;
   background-image: url("");
   order: 1;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+
     padding: 0;
+    padding-top: 41px;
+    padding-bottom: 25px;
+    padding-left: 107px;
+    font-size: 20px;
+    display: flex;
     margin: 0;
   }
 
@@ -50,10 +64,18 @@
 
 .demonstration__description {
   order: 3;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 41px;
+  padding-left: 34px;
 
   @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
     display: flex;
-    padding: 0;
+    padding: 0 40px 40px;
     margin: 0;
     height: max-content;
     flex-grow: 1;
@@ -97,6 +119,10 @@
 }
 
 .demonstration__order-button {
-  margin-bottom: 33px;
+  margin: 0 34px 33px;
   order: 4;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 42px 46px;
+  }
 }
