@@ -1,8 +1,8 @@
 .page__body {
   @include open-sans;
   margin: 0 auto;
-  width: $mobile;
+  // width: $mobile;
   // @media (min-width: $tablet-width) {
-  //   width: $tablet-width;
+  width: $tablet-width;
   // }
 }

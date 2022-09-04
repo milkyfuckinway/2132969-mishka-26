@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0;
+    padding: 50px 0;
   }
 }
 
@@ -51,7 +51,7 @@
   &::after {
     content: "";
     height: 1px;
-    width: 200px;
+    width: calc(100% - 60px);
     display: flex;
     background-color: $form-section-name-color;
 
@@ -63,8 +63,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     background-color: inherit;
+    height: max-content;
     width: 167px;
-    margin: 0;
     align-items: flex-start;
   }
 
@@ -96,6 +96,12 @@
   &:not(:last-child) {
     margin-bottom: 12px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .form__label {
@@ -110,6 +116,10 @@
   font-size: 17px;
   line-height: 18px;
   height: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .form__radio {
@@ -127,6 +137,12 @@
   position: relative;
   margin-right: 20px;
   order: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+    height: 49px;
+    width: 49px;
+  }
 }
 
 .form__radio:checked + .form__radio-box::after {
@@ -140,6 +156,11 @@
   background-color: $form-radio-pin-color;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .form__radio:hover + .form__radio-box {
@@ -172,6 +193,12 @@
   position: relative;
   margin-right: 22px;
   order: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+    height: 52px;
+    width: 52px;
+  }
 }
 
 .form__checkbox:checked + .form__checkbox-box::after {
@@ -184,6 +211,12 @@
   width: 23px;
   height: 16px;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 22px;
+    background-size: cover;
+  }
 }
 
 .form__checkbox:hover + .form__checkbox-box {
@@ -200,7 +233,7 @@
 
 .form__input {
   @include open-sans;
-  width: 100%;
+  width: calc(100% - 17px);
   min-height: 30px;
   font-size: 17px;
   line-height: 18px;
@@ -224,61 +257,65 @@
 
   &::placeholder {
     color: $form-placeholder-text-color;
-  }
-
-  &--textarea {
-    border: 2px solid $form-input-stroke-color;
-    min-height: 142px;
-    resize: none;
-    display: block;
-    padding: 16px;
-    box-sizing: border-box;
-    box-shadow: none;
-    margin-bottom: 17px;
-  }
-
-  &--textarea:hover {
-    box-shadow: none;
-  }
-
-  &--textarea:active {
-    box-shadow: none;
-  }
-
-  &--textarea:focus {
-    box-shadow: none;
-  }
-
-  &--textarea:disabled {
-    box-shadow: none;
-  }
-
-  &--textarea::placeholder {
-    width: 200px;
     margin: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-left: 17px;
   }
 }
 
 .form__section-wrapper--type {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--type .form__section-name {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+    margin-bottom: 0;
+    width: 171px;
+  }
+}
+
+.form__section-wrapper--type .form__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .form__section-wrapper--color {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--color .form__section-name {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--color .form__list {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -288,14 +325,27 @@
 
 .form__section-wrapper--color .form__item {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--name {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--name .form__section-name {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
 }
 
 .form__section-wrapper--name .form__item {
@@ -306,7 +356,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
-    column-gap: 25px;
+    column-gap: 24px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -316,22 +371,48 @@
 
 .form__section-wrapper--phone {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--phone .form__section-name {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
 }
 
 .form__section-wrapper--phone .form__input {
   height: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .form__section-wrapper--email {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__section-wrapper--email .form__section-name {
   margin-bottom: 4px;
+
+  &::after {
+    width: calc(100% - 78px);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 17px;
+  }
 }
 
 .form__section-wrapper--email .form__input {
@@ -340,11 +421,58 @@
 
 .form__section-wrapper--textfield {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
 }
 
 .form__section-wrapper--textfield .form__section-name {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
 }
+
+.form__section-wrapper--textfield .form__input {
+  border: 2px solid $form-input-stroke-color;
+  min-height: 142px;
+  resize: none;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: none;
+  margin-bottom: 17px;
+
+  &:hover {
+    border-color: $form-stroke-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-stroke-color-hover;
+  }
+
+  &:active {
+    border-color: $form-stroke-color-hover;
+  }
+
+  &::placeholder {
+    width: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-bottom: 0;
+    padding: 15px;
+    width: 100%;
+
+    &::placeholder {
+      width: auto;
+    }
+  }
+}
+
 
 .form__input--colored {
   @media (min-width: $tablet-width) {
@@ -363,6 +491,7 @@
     width: 668px;
     margin: 0 auto;
     place-items: center;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -382,6 +511,8 @@
     width: max-content;
     margin: 0;
     padding: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
