@@ -2,7 +2,6 @@
   @include open-sans;
   margin: 0 auto;
   // width: $mobile;
-  // @media (min-width: $tablet-width) {
-  width: $tablet-width;
-  // }
+  // width: $tablet-width;
+  // width: $desktop-width;
 }

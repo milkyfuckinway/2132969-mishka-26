@@ -31,7 +31,7 @@
     font-size: 53px;
     line-height: 57px;
     padding-bottom: 113px;
-    margin-bottom: 111px;
+    margin-bottom: 98px;
 
     &::after {
       height: 34px;
@@ -57,5 +57,12 @@
     padding: 0 50px;
     margin-top: 0;
     margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 14px;
+    padding-left: 225px;
+    width: 702px;
   }
 }
