@@ -233,13 +233,13 @@
 
 .form__input {
   @include open-sans;
-  width: calc(100% - 17px);
   min-height: 30px;
   font-size: 17px;
   line-height: 18px;
   border: none;
   box-shadow: inset 0 -2px 0 $form-input-stroke-color;
   padding: 0;
+  width: 100%;
 
   &:hover {
     box-shadow: inset 0 -2px 0 $form-input-stroke-hover-color;
@@ -263,6 +263,7 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     padding-left: 17px;
+    width: calc(100% - 17px);
   }
 }
 
@@ -393,9 +394,17 @@
 
 .form__section-wrapper--phone .form__input {
   height: 52px;
+  background-image: url("../img/decor/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right 8px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+    background-position: center right 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center right 8px;
   }
 }
 
@@ -422,6 +431,17 @@
 
 .form__section-wrapper--email .form__input {
   height: 52px;
+  background-image: url("../img/decor/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right 2px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center right 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center right 2px;
+  }
 }
 
 .form__section-wrapper--textfield {
@@ -481,7 +501,6 @@
     }
   }
 }
-
 
 .form__input--colored {
   @media (min-width: $tablet-width) {
