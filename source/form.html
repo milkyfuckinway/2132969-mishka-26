@@ -66,7 +66,7 @@
   <main class="main-container">
     <form class="form" action="https://echo.htmlacademy.ru">
       <div class="form__section">
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--type">
         <h3 class="form__section-name">Тип</h3>
         <ul class="form__list">
           <li class="form__item">
@@ -85,9 +85,9 @@
       </div>
       </div>
       <div class="form__section">
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--color">
         <h3 class="form__section-name">Цвет</h3>
-        <ul class="form__list form__list--colors">
+        <ul class="form__list">
           <li class="form__item">
             <label class="form__label">Белый
               <input class="form__checkbox" name="color" type="checkbox" value="white" checked>
@@ -128,19 +128,19 @@
         </div>
       </div>
       <div class="form__section">
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--name">
         <h3 class="form__section-name">Фио</h3>
         <ul class="form__list">
-          <li class="form__item form__item--section-name">
+          <li class="form__item">
             <label class="form__label" for="name">Имя:</label>
             <input class="form__input" id="name" name="name" type="text" placeholder="Введите ваше имя*" required>
           </li>
-          <li class="form__item form__item--section-name">
-            <label class="form__label" for="surname">Фамилия</label>
+          <li class="form__item">
+            <label class="form__label" for="surname">Фамилия:</label>
             <input class="form__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию*" required>
           </li>
-          <li class="form__item form__item--section-name">
-            <label class="form__label" for="middlename">Отчество</label>
+          <li class="form__item">
+            <label class="form__label" for="middlename">Отчество:</label>
             <input class="form__input" id="middlename" name="middlename" type="text"
               placeholder="Отчество, если желаете">
           </li>
@@ -148,13 +148,13 @@
         </div>
       </div>
       <div class="form__section">
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--phone">
         <h3 class="form__section-name">Тел</h3>
         <div class="form__list">
         <input class="form__input form__input--colored" id="phone" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </div>
         </div>
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--email">
         <h3 class="form__section-name">E-mail</h3>
         <div class="form__list">
         <input class="form__input form__input--colored" type="email" id="email" name="email" placeholder="Ваш Email*" required>
@@ -162,7 +162,7 @@
         </div>
       </div>
       <div class="form__section form-textfield">
-        <div class="form__section-wrapper">
+        <div class="form__section-wrapper form__section-wrapper--textfield">
         <h3 class="form__section-name">Доп</h3>
         <div class="form__list">
         <textarea class="form__input form__input--textarea" id="information" name="information"
