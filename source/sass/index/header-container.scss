@@ -36,7 +36,7 @@
 }
 
 .header-container__hero {
-  height: 283px;
+  min-height: 283px;
   background-image: url("../img/hero-mobile@2x 1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +44,7 @@
   background-color: #f9f9f9;
 
   @media (min-width: $tablet-width) {
-    height: 626px;
+    min-height: 626px;
     background-size: cover;
   }
 }

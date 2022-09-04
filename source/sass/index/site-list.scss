@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 1px;
-    max-width: 400px;
+    max-width: 50%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -19,6 +19,7 @@
     position: static;
     transform: none;
     grid-column-gap: 0;
+    max-width: 40%;
   }
 }
 

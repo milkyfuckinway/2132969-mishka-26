@@ -62,7 +62,7 @@
     font-size: 43px;
     line-height: 50px;
     display: flex;
-    width: 300px;
+    width: 480px;
     margin: 0;
     order: 1;
     margin-top: 83px;
@@ -73,6 +73,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 36px;
+    width: 680px;
   }
 }
 
@@ -209,7 +210,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     width: 175px;
-    height: 50px;
+    min-height: 50px;
     margin-top: auto;
     margin-bottom: 40px;
   }

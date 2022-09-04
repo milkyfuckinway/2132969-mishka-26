@@ -72,6 +72,10 @@
     position: absolute;
     width: auto;
     transform: translateX(-113px);
+    max-width: 113px;
+    max-height: 65px;
+    overflow-wrap: anywhere;
+    overflow: hidden;
   }
 }
 
