@@ -2,9 +2,25 @@
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/decor/big-wave.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+      background-image: url("../img/decor/big-wave-desktop.svg");
+    }
   }
 }
 
@@ -19,22 +35,35 @@
   }
 }
 
-.header-container__title {
-  text-align: center;
-  padding: 73px 30px 120px;
-  margin: 0;
+.header-container__hero {
+  min-height: 283px;
   background-image: url("../img/hero-mobile@2x 1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-color: #f9f9f9;
+
+  @media (min-width: $tablet-width) {
+    min-height: 626px;
+    background-size: cover;
+  }
+}
+
+.header-container__title {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 73px;
+  width: 80%;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 155px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 155px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -108,10 +137,21 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 119px;
+    min-height: 113px;
+    padding: 0 36px 19px;
+    font-size: 20px;
+    line-height: 30px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 36px 22px;
+  }
+}
+
+.header-container__menu-icon {
+  transform: translateY(5px);
 }

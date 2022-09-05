@@ -2,10 +2,18 @@
   display: none;
   list-style: none;
   padding: 0;
+  z-index: 101;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    order: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
   }
 }
 
@@ -13,6 +21,11 @@
   display: flex;
   margin-right: 45px;
   place-items: center;
+
+  @media (min-width: $desktop-width) {
+    min-height: 65px;
+    margin-right: 62px;
+  }
 }
 
 .additional-list__link {
@@ -28,5 +41,11 @@
 
   &:active {
     color: $big-link-active-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
 }
