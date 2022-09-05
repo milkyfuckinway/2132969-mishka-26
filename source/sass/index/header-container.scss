@@ -37,15 +37,25 @@
 
 .header-container__hero {
   min-height: 283px;
-  background-image: url("../img/hero-mobile@2x 1.jpg");
+  background-image: url("../img/content/hero/mobile/hero-mobile.jpg");
+  background-size: 320px auto;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center -18px;
   background-color: #f9f9f9;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/hero/mobile/hero-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 626px;
-    background-size: cover;
+    background-image: url("../img/content/hero/desktop/hero-desktop.png");
+    background-size: 1150px;
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/hero/desktop/hero-desktop@2x.png");
+    }
   }
 }
 
