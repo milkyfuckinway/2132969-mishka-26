@@ -55,6 +55,14 @@
   }
 }
 
+.product-of-the-week__sign {
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+}
+
 .product-of-the-week__description {
   @include open-sans;
   color: $additional-text-color;
@@ -118,7 +126,7 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  padding: 25px 0;
+  padding: 28px 0 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

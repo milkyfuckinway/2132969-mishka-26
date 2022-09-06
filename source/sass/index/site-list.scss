@@ -24,7 +24,6 @@
 }
 
 .site-list__item {
-  min-height: 79px;
   text-align: left;
   box-shadow: $menu-shadow;
 
@@ -54,8 +53,8 @@
   line-height: 24px;
   font-size: 17px;
   display: flex;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  min-height: 79px;
+  place-items: center;
   padding-left: 76px;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +62,6 @@
     font-size: 15px;
     min-width: 167px;
     min-height: 65px;
-    align-items: center;
 
     @media (min-width: $desktop-width) {
       min-height: auto;
@@ -76,6 +74,11 @@
 
   &:hover {
     color: $big-link-hover-color;
+  }
+
+  &:focus {
+    color: $big-link-hover-color;
+    outline: none;
   }
 
   &:active {

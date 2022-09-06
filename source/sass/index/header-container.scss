@@ -94,8 +94,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  min-height: 103px;
-  padding: 0 30px;
+  min-height: 96px;
+  padding: 0 30px 7px;
   align-items: center;
   color: $menu-button-font-color;
   font-size: 19px;
@@ -162,6 +162,18 @@
   }
 }
 
-.header-container__menu-icon {
-  transform: translateY(5px);
+.header-container__menu-icon--option-one {
+  transform: translate(-6px, 5px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(0, 5px);
+  }
+}
+
+.header-container__menu-icon--option-two {
+  transform: translate(3px, 2px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(3px, 5px);
+  }
 }

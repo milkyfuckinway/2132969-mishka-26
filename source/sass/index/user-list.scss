@@ -54,6 +54,12 @@
     fill: $user-list-icon-color-hover;
   }
 
+  &:focus {
+    color: $big-link-hover-color;
+    fill: $user-list-icon-color-hover;
+    outline: none;
+  }
+
   &:active {
     color: $big-link-active-color;
     fill: $user-list-icon-color-active;
