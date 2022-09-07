@@ -42,8 +42,10 @@
 .product-of-the-week__title {
   margin: 0;
   padding-bottom: 4px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 0;
     font-size: 43px;
     line-height: 50px;

@@ -36,30 +36,56 @@
 .demonstration__title {
   @include open-sans-bold;
   margin: 0;
-  padding: 22px 0 26px 91px;
+  margin-left: 91px;
+  margin-top: 22px;
+  margin-bottom: 26px;
   font-size: 17px;
   line-height: 24px;
   order: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 22px;
+    left: -41px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url("../img/decor/video/demonstration-icon.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     br {
       display: none;
     }
 
-    padding: 41px 107px 25px 107px;
+    &::after {
+      left: -49px;
+      top: 38%;
+    }
+
+    margin: 41px 107px 25px 107px;
     font-size: 20px;
     display: flex;
-    margin: 0;
+    background-position: 42px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 28px;
-    height: min-content;
-    margin-top: auto;
-
     br {
       display: block;
     }
+
+    &::after {
+      left: 0;
+      top: -38px;
+      transform: translate(0, -50%);
+    }
+
+    margin: 0 0 0 28px;
+    height: min-content;
+    margin-top: auto;
   }
 }
 
@@ -89,26 +115,55 @@
   }
 }
 
-.demonstration__video {
+.demonstration__video-box {
   display: flex;
   min-height: 150px;
   justify-content: center;
+  position: relative;
   align-items: center;
   background-color: #ececec;
   order: 2;
+  background-image: url("../img/decor/video/video-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 455px;
+    width: 100%;
     order: -1;
+    background-image: url("../img/decor/video/video-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
+    background-image: url("../img/decor/video/video-desktop.jpg");
   }
 }
 
+
+.demonstration__video {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.demonstration__video--nojs {
+  background-image: none;
+  z-index: 1;
+}
+
+.demonstration__video--started {
+  background-image: none;
+  z-index: 1;
+}
+
 .demonstration__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0;
   margin: 0;
   border: 0;
@@ -116,13 +171,17 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(120%);
+    transform: translate(-50%, -50%) scale(120%);
   }
 
   &:active {
-    transform: scale(80%);
+    transform: translate(-50%, -50%) scale(80%);
     opacity: 30%;
   }
+}
+
+.demonstration__play--video-started {
+  display: none;
 }
 
 .demonstration__order-button {
