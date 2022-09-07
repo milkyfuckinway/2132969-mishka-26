@@ -123,21 +123,33 @@
   align-items: center;
   background-color: #ececec;
   order: 2;
-  background-image: url("../img/decor/video/video-mobile.jpg");
+  background-image: url("../img/decor/video/mobile/video-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decor/video/mobile/video-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     height: 455px;
     width: 100%;
     order: -1;
-    background-image: url("../img/decor/video/video-tablet.jpg");
+    background-image: url("../img/decor/video/tablet/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/video/tablet/video-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    background-image: url("../img/decor/video/video-desktop.jpg");
+    background-image: url("../img/decor/video/desktop/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor/video/desktop/video-desktop@2x.jpg");
+    }
   }
 }
 
