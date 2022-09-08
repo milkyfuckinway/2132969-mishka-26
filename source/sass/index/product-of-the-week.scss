@@ -1,25 +1,25 @@
 .product-of-the-week {
   &::after {
-    content: "";
     background-image: url("../img/decor/wave-small-mobile.svg");
+    content: "";
     display: block;
     height: 6px;
-    width: 100%;
-    margin-top: 36px;
     margin-bottom: 31px;
+    margin-top: 36px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/decor/wave-small-tablet.svg");
       height: 17px;
-      margin-top: 52px;
       margin-bottom: 55px;
+      margin-top: 52px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/decor/wave-small-desktop.svg");
       height: 23px;
-      margin-top: 73px;
       margin-bottom: 68px;
+      margin-top: 73px;
     }
   }
 }
@@ -28,13 +28,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    place-items: center;
-    margin-top: 39px;
     margin-bottom: 38px;
+    margin-top: 39px;
+    place-items: center;
 
     @media (min-width: $desktop-width) {
-      margin-top: 116px;
       margin-bottom: 35px;
+      margin-top: 116px;
     }
   }
 }
@@ -45,10 +45,10 @@
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
     font-size: 43px;
     line-height: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,37 +74,37 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 292px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 36px;
+    width: 292px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 292px;
     line-height: 30px;
     margin-bottom: 50px;
+    width: 292px;
   }
 }
 
 .product-of-the-week__photo {
   display: block;
-  width: 260px;
   height: 315px;
   margin: 0 auto;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 50%;
-    height: 404px;
-    right: 0;
     bottom: 0;
+    height: 404px;
+    position: absolute;
+    right: 0;
+    width: 50%;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 525px;
     height: 636px;
+    width: 525px;
   }
 }
 
@@ -127,8 +127,8 @@
   color: $product-of-the-week-price-color;
   font-size: 17px;
   line-height: 24px;
-  text-align: center;
   padding: 28px 0 23px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -145,7 +145,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 292px;
     margin-bottom: 5px;
+    width: 292px;
   }
 }

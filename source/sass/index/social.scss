@@ -1,6 +1,6 @@
 .social {
-  width: 100%;
   background-color: $footer-socials-backgroun-color;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 143px;
@@ -8,36 +8,36 @@
 }
 
 .social__wrapper {
+  align-items: center;
+  background-color: $footer-socials-backgroun-color;
   display: grid;
   grid-template-rows: 1fr 1fr;
   min-height: 160px;
-  background-color: $footer-socials-backgroun-color;
   padding: 0 30px;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 122px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
     min-height: 143px;
     padding: 0 50px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
     column-gap: 312px;
+    max-width: 1050px;
   }
 }
 
 .social__list {
+  column-gap: 29px;
   display: grid;
   grid-template-columns: 28px 28px 28px;
   grid-template-rows: 29px;
-  column-gap: 29px;
+  list-style: none;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 8px;
@@ -75,23 +75,23 @@
 
 .social__logo {
   display: block;
-  margin: 0 auto;
-  height: 100%;
   fill: inherit;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .social__developer {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  fill: $developer-color;
   border-top: 1px solid $developer-divider;
+  display: flex;
+  fill: $developer-color;
   height: calc(100% - 1px);
+  justify-content: center;
+  text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
     border: none;
+    margin-bottom: 10px;
   }
 
   &:hover {
@@ -113,6 +113,6 @@
 }
 
 .social__developer-icon {
-  flex-shrink: 0;
   fill: inherit;
+  flex-shrink: 0;
 }

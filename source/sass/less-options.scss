@@ -13,14 +13,14 @@ $modal-shadow: 0 5px 10px 0 rgba(#000101, 25%);
 // }
 
 .visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
   border: 0;
-  margin: -1px;
   clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 @mixin open-sans {
@@ -34,8 +34,8 @@ $modal-shadow: 0 5px 10px 0 rgba(#000101, 25%);
 }
 
 @mixin align-center {
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }

@@ -27,13 +27,13 @@
   position: relative;
 
   &::before {
+    background-position: left bottom;
+    background-repeat: no-repeat;
     content: "";
+    left: 25px;
     position: absolute;
     top: -18px;
-    left: 25px;
     transform: translateY(-100%) translateX(-50%);
-    background-repeat: no-repeat;
-    background-position: left bottom;
   }
 
   &:nth-child(1)::before {
@@ -45,8 +45,8 @@
   &:nth-child(2)::before {
     background-image: url("../img/decor/advantages/advantages-icon-2.svg");
     height: 27px;
-    width: 47px;
     top: -26px;
+    width: 47px;
   }
 
   &:nth-child(3)::before {
@@ -58,28 +58,28 @@
   &:nth-child(4)::before {
     background-image: url("../img/decor/advantages/advantages-icon-4.svg");
     height: 34px;
-    width: 35px;
     left: 20px;
+    width: 35px;
   }
 
   &:nth-child(5)::before {
     background-image: url("../img/decor/advantages/advantages-icon-5.svg");
     height: 23px;
-    width: 55px;
     left: 20px;
     top: -26px;
+    width: 55px;
   }
 
   &:nth-child(6)::before {
     background-image: url("../img/decor/advantages/advantages-icon-6.svg");
-    width: 33px;
     height: 32px;
     left: 20px;
+    width: 33px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
 
     &:nth-child(1) {
       order: 1;
@@ -121,18 +121,18 @@
 }
 
 .advantages__list {
+  display: grid;
+  grid-template-columns: 1fr;
   list-style: none;
   margin: 0;
   margin-top: 82px;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
   row-gap: 83px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 110px;
     margin-top: 97px;
+    row-gap: 110px;
   }
 
   @media (min-width: $desktop-width) {

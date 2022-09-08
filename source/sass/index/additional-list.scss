@@ -5,15 +5,15 @@
   z-index: 101;
 
   @media (min-width: $desktop-width) {
+    bottom: 0;
     display: grid;
     grid-template-columns: auto auto;
-    position: absolute;
     left: 0;
-    bottom: 0;
-    transform: translateY(100%);
     margin: 0;
-    padding: 0;
     max-width: 50%;
+    padding: 0;
+    position: absolute;
+    transform: translateY(100%);
   }
 }
 
@@ -23,16 +23,16 @@
   place-items: center;
 
   @media (min-width: $desktop-width) {
-    min-height: 65px;
     margin-right: 62px;
+    min-height: 65px;
   }
 }
 
 .additional-list__link {
   @include open-sans-bold;
+  color: $main-text-color;
   font-size: 15px;
   line-height: 24px;
-  color: $main-text-color;
   text-decoration: none;
 
   &:hover {
@@ -44,8 +44,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
     display: flex;
     height: 100%;
-    align-items: center;
   }
 }
