@@ -42,8 +42,10 @@
 .product-of-the-week__title {
   margin: 0;
   padding-bottom: 4px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 0;
     font-size: 43px;
     line-height: 50px;
@@ -52,6 +54,14 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.product-of-the-week__sign {
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -118,7 +128,7 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  padding: 25px 0;
+  padding: 28px 0 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

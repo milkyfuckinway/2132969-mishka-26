@@ -476,6 +476,7 @@
   display: block;
   box-sizing: border-box;
   box-shadow: none;
+  padding: 15px;
   margin-bottom: 17px;
 
   &:hover {
@@ -497,7 +498,6 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     margin-bottom: 0;
-    padding: 15px;
     width: 100%;
 
     &::placeholder {

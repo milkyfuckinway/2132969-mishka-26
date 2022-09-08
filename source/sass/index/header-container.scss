@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: $side-background-color;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -37,15 +37,25 @@
 
 .header-container__hero {
   min-height: 283px;
-  background-image: url("../img/hero-mobile@2x 1.jpg");
+  background-image: url("../img/content/hero/mobile/hero-mobile.jpg");
+  background-size: 320px auto;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center -18px;
   background-color: #f9f9f9;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/hero/mobile/hero-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 626px;
-    background-size: cover;
+    background-image: url("../img/content/hero/desktop/hero-desktop.png");
+    background-size: 1150px;
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/hero/desktop/hero-desktop@2x.png");
+    }
   }
 }
 
@@ -84,8 +94,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  min-height: 103px;
-  padding: 0 30px;
+  min-height: 96px;
+  padding: 0 30px 7px;
   align-items: center;
   color: $menu-button-font-color;
   font-size: 19px;
@@ -103,10 +113,6 @@
 
   &:active {
     fill: $additional-menu-button-decor-active-color;
-  }
-
-  &:last-child {
-    margin-bottom: 31px;
   }
 
   &--option-one {
@@ -152,6 +158,18 @@
   }
 }
 
-.header-container__menu-icon {
-  transform: translateY(5px);
+.header-container__menu-icon--option-one {
+  transform: translate(-6px, 5px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(0, 5px);
+  }
+}
+
+.header-container__menu-icon--option-two {
+  transform: translate(3px, 2px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(3px, 5px);
+  }
 }
