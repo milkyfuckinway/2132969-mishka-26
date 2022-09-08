@@ -1,7 +1,7 @@
 .main-nav {
-  z-index: 100;
   background-color: $color-background;
   min-height: 80px;
+  z-index: 100;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #ececec;
@@ -17,12 +17,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
-    width: 668px;
+    margin: 0 auto;
     position: relative;
+    width: 668px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,10 +44,10 @@
 }
 
 .main-nav--opened .main-nav__wrapper {
+  background-color: #ffffff;
   position: absolute;
   width: 100%;
   z-index: 1000;
-  background-color: #ffffff;
 }
 
 .main-nav--closed .main-nav__list {
@@ -59,12 +59,12 @@
 }
 
 .main-nav__link {
-  width: 100%;
-  min-height: 79px;
   display: flex;
-  place-items: center;
-  justify-content: center;
   fill: $header-logo-color;
+  justify-content: center;
+  min-height: 79px;
+  place-items: center;
+  width: 100%;
 
   &:hover {
     opacity: 70%;
@@ -80,10 +80,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 100%;
     justify-content: flex-start;
     min-height: 88px;
     width: 100%;
-    height: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,21 +92,21 @@
 }
 
 .main-nav__icon {
-  margin: auto;
   fill: inherit;
+  margin: auto;
 }
 
 .main-nav__menu-toggle {
   align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
   justify-content: center;
   margin: 0 auto;
-  right: 0;
-  display: flex;
   padding: 40px;
-  border: none;
-  background: none;
-  cursor: pointer;
   position: absolute;
+  right: 0;
   z-index: 102;
 
   @media (min-width: $tablet-width) {
@@ -141,10 +141,10 @@
 }
 
 .main-nav__logo {
-  display: flex;
   align-items: center;
-  position: relative;
   box-shadow: $menu-shadow;
+  display: flex;
+  position: relative;
   z-index: 101;
 
   @media (min-width: $tablet-width) {
@@ -153,9 +153,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 50%;
     order: 3;
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
     width: 150px;
   }
@@ -166,13 +166,13 @@
   z-index: 101;
 
   @media (min-width: $tablet-width) {
+    bottom: 0;
     display: flex;
+    min-height: 65px;
     order: 3;
     place-items: center;
-    min-height: 65px;
     position: absolute;
     right: 0;
-    bottom: 0;
     transform: translateY(100%);
   }
 

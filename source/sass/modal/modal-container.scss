@@ -1,42 +1,42 @@
 .modal-container {
-  display: none;
-  position: fixed;
   background-color: $modal-fade-color;
-  width: 100%;
+  display: none;
   height: 100%;
-  z-index: 150000;
-  top: 0;
   left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 150000;
 }
 
 .modal-container__wrapper {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: $modal-background-color;
-  width: 100%;
+  box-shadow: $modal-shadow;
   box-sizing: border-box;
-  max-width: 566px;
   display: flex;
   flex-direction: column;
-  padding: 28px 30px 46px;
+  left: 50%;
+  max-width: 566px;
   outline: 1px solid $modal-stroke-color;
-  box-shadow: $modal-shadow;
+  padding: 28px 30px 46px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .modal-container__title {
+  margin: 28px 0 14px 0;
   text-align: center;
   text-transform: uppercase;
-  margin: 28px 0 14px 0;
 }
 
 .modal-container__description {
   @include open-sans;
   font-size: 15px;
   line-height: 30px;
-  text-align: center;
   margin: 0 0 22px;
+  text-align: center;
 }
 
 .modal-container__options {
@@ -45,12 +45,12 @@
 }
 
 .modal-container__buttons {
+  border: 0;
   display: flex;
   justify-content: center;
   margin: 0;
   margin-bottom: 31px;
   padding: 0;
-  border: 0;
 }
 
 .modal-container__buttons-item {
@@ -65,9 +65,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .modal-container__buttons-legend {
@@ -84,15 +84,15 @@
 
 .modal-container__label {
   @include open-sans-bold;
-  font-size: 17px;
-  line-height: 16px;
-  display: flex;
-  border: 2px solid $modal-button-color;
   align-items: center;
-  justify-content: center;
+  border: 2px solid $modal-button-color;
+  display: flex;
+  font-size: 17px;
   height: 48px;
-  min-width: 78px;
+  justify-content: center;
+  line-height: 16px;
   max-width: 112px;
+  min-width: 78px;
 
   &:hover {
     border: 2px solid $modal-button-hover-color;
@@ -104,14 +104,14 @@
 }
 
 .modal-container__submit {
-  font-size: 17px;
-  line-height: 16px;
   background-color: $modal-submit-button-background-color;
   color: $modal-submit-button-text-color;
-  outline: none;
-  min-width: 260px;
-  max-width: 350px;
+  font-size: 17px;
+  line-height: 16px;
   margin: 0 auto;
+  max-width: 350px;
+  min-width: 260px;
+  outline: none;
 
   &:hover {
     background-color: $modal-submit-button-background-hover-color;

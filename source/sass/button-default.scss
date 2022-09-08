@@ -1,21 +1,21 @@
 .button-default {
   @include open-sans-bold;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 52px;
   background-color: $default-button-background-color;
+  border: none;
   color: $default-button-text-color;
+  cursor: pointer;
+  display: flex;
   font-size: 18px;
+  justify-content: center;
   line-height: 20px;
+  min-height: 52px;
+  outline: 2px solid $default-button-stroke-color;
+  outline-offset: -2px;
+  padding: 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border: none;
-  outline-offset: -2px;
-  outline: 2px solid $default-button-stroke-color;
-  padding: 0;
-  cursor: pointer;
 
   &:hover {
     background-color: $default-button-background-hover-color;
@@ -29,9 +29,9 @@
 
   &:disabled {
     background-color: $default-button-background-disabled-color;
-    outline: 2px solid $default-button-stroke-disabled-color;
     color: $default-button-text-disabled-color;
     cursor: not-allowed;
+    outline: 2px solid $default-button-stroke-disabled-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,26 +41,26 @@
 
 .default-sign {
   @include open-sans-bold;
-  padding-bottom: 18px;
   color: $product-of-the-week-sign-color;
   font-size: 17px;
   line-height: 20px;
+  padding-bottom: 18px;
   text-align: left;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     line-height: 17px;
-    width: 100px;
-    text-align: center;
-    padding-right: 13px;
     padding-bottom: 2px;
+    padding-right: 13px;
+    text-align: center;
+    width: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     left: calc(175px / 2);
-    transform: translateX(-50%);
-    padding-right: 13px;
     padding-bottom: 7px;
+    padding-right: 13px;
+    position: absolute;
+    transform: translateX(-50%);
   }
 }
