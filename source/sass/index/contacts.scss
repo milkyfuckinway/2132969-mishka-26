@@ -257,9 +257,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 50px;
     margin: 0;
     margin-right: auto;
     margin-top: auto;
+    min-height: 50px;
   }
 }

@@ -79,13 +79,14 @@
 
     &::after {
       left: 0;
-      top: -38px;
-      transform: translate(0, -50%);
+      top: 0;
+      transform: translate(0, 0);
     }
     height: min-content;
 
     margin: 0 0 0 28px;
     margin-top: auto;
+    padding-top: 49px;
   }
 }
 

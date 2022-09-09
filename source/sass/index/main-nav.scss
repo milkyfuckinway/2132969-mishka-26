@@ -91,6 +91,10 @@
   }
 }
 
+.main-nav__link--current {
+  pointer-events: none;
+}
+
 .main-nav__icon {
   fill: inherit;
   margin: auto;
