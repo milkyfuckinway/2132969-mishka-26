@@ -154,7 +154,6 @@
   }
 }
 
-
 .demonstration__video {
   box-sizing: border-box;
   height: 100%;
@@ -169,14 +168,19 @@
 
 .demonstration__play {
   background-color: transparent;
+  background-image: url("../img/svg/play-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
+  height: 78px;
   left: 50%;
   margin: 0;
   padding: 0;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 102px;
 
   &:hover {
     transform: translate(-50%, -50%) scale(120%);
