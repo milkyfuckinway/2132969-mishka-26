@@ -182,6 +182,9 @@
 
 .reviews__toggle-button {
   background-color: $reviews-button-background;
+  background-image: url("../img/decor/huge-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid $reviews-stroke-color;
   cursor: pointer;
   fill: $reviews-arrow-color;
@@ -196,20 +199,20 @@
   }
 
   &:hover {
-    fill: $reviews-arrow-hover-color;
+    opacity: 0.6;
   }
 
   &:active {
-    fill: $reviews-arrow-active-color;
+    opacity: 0.3;
   }
 
   &:disabled {
-    fill: $reviews-arrow-disabled-color;
+    opacity: 0.1;
   }
 }
 
-.reviews__button-icon {
-  fill: inherit;
+.reviews__toggle-button--forward {
+  transform: rotate(180deg);
 }
 
 .reviews__leave-feedback-button {

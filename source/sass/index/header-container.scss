@@ -95,7 +95,6 @@
   color: $menu-button-font-color;
   display: flex;
   fill: $additional-menu-button-decor-color;
-  flex-direction: row-reverse;
   font-size: 19px;
   font-weight: 700;
   justify-content: space-between;
@@ -107,13 +106,14 @@
   text-decoration: none;
 
   &:hover {
-    fill: $additional-menu-button-decor-hover-color;
     transform: translateY(-5px);
   }
 
-  &:active {
-    fill: $additional-menu-button-decor-active-color;
+  &:focus {
+    outline: none;
+    transform: translateY(-5px);
   }
+
 
   &--option-one {
     background-color: $menu-button-color;
@@ -124,8 +124,34 @@
     box-shadow: 0 5px 0 0 $menu-button-color;
   }
 
+  &--option-one:focus {
+    background-color: $menu-button-hover-color;
+    box-shadow: 0 5px 0 0 $menu-button-color;
+  }
+
   &--option-one:active {
     background-color: $menu-button-active-color;
+  }
+
+  &--option-one::after {
+    background-image: url("/img/decor/menu-buttons-icon/interior-icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 62px;
+    opacity: 0.5;
+    width: 40px;
+  }
+
+  &--option-one:hover::after {
+    opacity: 0.7;
+  }
+
+  &--option-one:focus::after {
+    opacity: 0.7;
+  }
+
+  &--option-one:active::after {
+    opacity: 0.3;
   }
 
   &--option-two {
@@ -137,9 +163,36 @@
     box-shadow: 0 5px 0 0 $additional-menu-button-hover-color;
   }
 
+  &--option-two:focus {
+    background-color: $additional-menu-button-hover-color;
+    box-shadow: 0 5px 0 0 $additional-menu-button-hover-color;
+  }
+
   &--option-two:active {
     background-color: $additional-menu-button-hover-color;
   }
+
+  &--option-two::after {
+    background-image: url("/img/decor/menu-buttons-icon/toy-icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 60px;
+    opacity: 0.5;
+    width: 60px;
+  }
+
+  &--option-two:hover::after {
+    opacity: 0.7;
+  }
+
+  &--option-two:focus::after {
+    opacity: 0.7;
+  }
+
+  &--option-two:active::after {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -155,21 +208,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 36px 22px;
-  }
-}
-
-.header-container__menu-icon--option-one {
-  transform: translate(-6px, 5px);
-
-  @media (min-width: $tablet-width) {
-    transform: translate(0, 5px);
-  }
-}
-
-.header-container__menu-icon--option-two {
-  transform: translate(3px, 2px);
-
-  @media (min-width: $tablet-width) {
-    transform: translate(3px, 5px);
   }
 }

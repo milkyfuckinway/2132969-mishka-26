@@ -31,10 +31,10 @@
 }
 
 .social__list {
-  column-gap: 29px;
   display: grid;
+  gap: 29px;
   grid-template-columns: 28px 28px 28px;
-  grid-template-rows: 29px;
+  grid-template-rows: repeat(auto, 29px);
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -73,11 +73,17 @@
   }
 }
 
-.social__logo {
-  display: block;
-  fill: inherit;
+.social__link {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
   height: 100%;
-  margin: 0 auto;
+  place-content: center;
+  width: 100%;
+}
+
+.social__logo {
+  fill: inherit;
 }
 
 .social__developer {

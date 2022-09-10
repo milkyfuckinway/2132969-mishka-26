@@ -1,12 +1,15 @@
 .modal-container {
   background-color: $modal-fade-color;
-  display: none;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 150000;
+}
+
+.modal-container--closed {
+  display: none;
 }
 
 .modal-container__wrapper {
