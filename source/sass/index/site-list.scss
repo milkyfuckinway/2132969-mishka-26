@@ -1,43 +1,43 @@
 .site-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   z-index: 101;
 
   @media (min-width: $tablet-width) {
-    order: 2;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 1px;
-    max-width: 50%;
-    position: absolute;
-    left: 0;
     bottom: 0;
+    display: grid;
+    grid-column-gap: 1px;
+    grid-template-columns: auto auto;
+    left: 0;
+    max-width: 50%;
+    order: 2;
+    position: absolute;
     transform: translateY(100%);
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
-    transform: none;
     grid-column-gap: 0;
     max-width: 40%;
+    position: static;
+    transform: none;
   }
 }
 
 .site-list__item {
-  text-align: left;
   box-shadow: $menu-shadow;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
-    min-height: auto;
     box-shadow: none;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 88px;
 
     &:nth-child(odd) {
-      padding-right: 35px;
       border-right: 1px solid #ececec;
+      padding-right: 35px;
     }
 
     &:nth-child(even) {
@@ -49,26 +49,26 @@
 .site-list__link {
   @include open-sans-bold;
   color: $big-link-color;
-  text-decoration: none;
-  line-height: 24px;
-  font-size: 17px;
   display: flex;
+  font-size: 17px;
+  line-height: 24px;
   min-height: 79px;
-  place-items: center;
   padding-left: 76px;
+  place-items: center;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     font-size: 15px;
-    min-width: 167px;
     min-height: 65px;
+    min-width: 167px;
+    padding: 0;
 
     @media (min-width: $desktop-width) {
+      font-size: 17px;
+      height: 100%;
+      line-height: 24px;
       min-height: auto;
       min-width: auto;
-      height: 100%;
-      font-size: 17px;
-      line-height: 24px;
     }
   }
 

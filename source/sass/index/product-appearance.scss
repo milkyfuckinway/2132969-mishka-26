@@ -1,19 +1,19 @@
 .product-appearance {
+  align-items: center;
   color: $additional-text-color;
+  display: flex;
   font-size: 15px;
   line-height: 20px;
   min-height: 40px;
-  display: flex;
-  align-items: center;
   position: relative;
 
   &::after {
+    background-color: $product-of-the-week-table-divider-color;
+    bottom: -2px;
     content: "";
+    height: 1px;
     position: absolute;
     width: 100%;
-    height: 1px;
-    bottom: -2px;
-    background-color: $product-of-the-week-table-divider-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,9 +26,9 @@
 }
 
 .product-appearance__type {
-  width: 38%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 38%;
 
   @media (min-width: $tablet-width) {
     width: 33.33%;
@@ -36,9 +36,9 @@
 }
 
 .product-appearance__description {
-  width: 62%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 62%;
 
   @media (min-width: $tablet-width) {
     width: auto;
