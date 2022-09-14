@@ -48,13 +48,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/content/hero/desktop/hero-desktop.png");
+    background-image: url("../img/content/hero/desktop/hero-desktop.jpg");
     background-position: center 0;
     background-size: 1150px;
     min-height: 626px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/content/hero/desktop/hero-desktop@2x.png");
+      background-image: url("../img/content/hero/desktop/hero-desktop@2x.jpg");
     }
   }
 }

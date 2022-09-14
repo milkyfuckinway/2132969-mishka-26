@@ -154,18 +154,6 @@
   }
 }
 
-.demonstration__video {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-.demonstration__video--started {
-  background-image: none;
-  z-index: 1;
-}
-
 .demonstration__play {
   background-color: transparent;
   background-image: url("../img/svg/play-button.svg");
@@ -190,10 +178,6 @@
     opacity: 30%;
     transform: translate(-50%, -50%) scale(80%);
   }
-}
-
-.demonstration__play--video-started {
-  display: none;
 }
 
 .demonstration__order-button {
