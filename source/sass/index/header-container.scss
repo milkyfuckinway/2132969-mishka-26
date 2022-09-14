@@ -137,6 +137,7 @@
     background-image: url("../img/decor/menu-buttons-icon/interior-icon.svg");
     background-repeat: no-repeat;
     content: "";
+    flex-shrink: 0;
     height: 62px;
     opacity: 0.5;
     width: 40px;
@@ -176,6 +177,7 @@
     background-image: url("../img/decor/menu-buttons-icon/toy-icon.svg");
     background-repeat: no-repeat;
     content: "";
+    flex-shrink: 0;
     height: 60px;
     opacity: 0.5;
     width: 60px;

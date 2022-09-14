@@ -50,12 +50,13 @@
     margin-bottom: 9px;
     margin-top: auto;
     padding: 0;
-    width: min-content;
+    width: 600px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    width: 350px;
   }
 }
 
