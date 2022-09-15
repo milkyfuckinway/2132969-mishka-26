@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link href="favicon.ico" rel="icon" />
-    <link type="image/svg+xml" href="img/favicons/favicon.svg" rel="icon" />
-    <link href="img/favicons/apple.png" rel="apple-touch-icon" />
-    <link href="/manifest.webmanifest" rel="manifest" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="icon">
+    <link type="image/svg+xml" href="img/favicons/favicon.svg" rel="icon">
+    <link href="img/favicons/apple.png" rel="apple-touch-icon">
+    <link href="manifest.webmanifest" rel="manifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link type="font/woff2" href="fonts/opensans.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link type="font/woff2" href="fonts/opensansbold.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page-body">
@@ -17,9 +19,9 @@
           <div class="main-nav__logo">
             <a class="main-nav__link main-nav__link--current">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-header/desktop/mishka-logo-desktop.svg" />
-                <source media="(min-width: 768px)" srcset="img/logo-header/tablet/mishka-logo-tablet.svg" />
-                <img src="img/logo-header/mobile/mishka-logo-mobile.svg" alt="«Мишка»" />
+                <source media="(min-width: 1150px)" srcset="img/logo-header/desktop/mishka-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-header/tablet/mishka-logo-tablet.svg">
+                <img src="img/logo-header/mobile/mishka-logo-mobile.svg" alt="«Мишка»">
               </picture>
             </a>
           </div>
@@ -42,7 +44,7 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="user-list__link" href="#"></a>
+              <a class="user-list__link" href="#">
                 <svg class="user-list__icon" width="18" height="18">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
@@ -74,19 +76,19 @@
           <div class="header-container__hero">
             <h1 class="header-container__title main-title">
               Милые штуки ручной
-              <br />
+              <br>
               работы для дома
             </h1>
           </div>
           <div class="header-container__menu-buttons">
             <a class="header-container__menu-link header-container__menu-link--option-one" href="#">
               Предметы&nbsp;
-              <br />
+              <br>
               интерьера
             </a>
             <a class="header-container__menu-link header-container__menu-link--option-two" href="#">
               Детские&nbsp;
-              <br />
+              <br>
               игрушки
             </a>
           </div>
@@ -117,12 +119,12 @@
               </tr>
             </table>
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/product-of-the-week/desktop/potw-desktop.webp, img/content/product-of-the-week/desktop/potw-desktop@2x.webp 2x" />
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/product-of-the-week/tablet/potw-tablet.webp, img/content/product-of-the-week/tablet/potw-tablet@2x.webp 2x" />
-              <source type="image/webp" srcset="img/content/product-of-the-week/mobile/potw-mobile.webp, img/content/product-of-the-week/mobile/potw-mobile@2x.webp 2x" />
-              <source media="(min-width: 1150px)" srcset="img/content/product-of-the-week/desktop/potw-desktop.jpg, img/content/product-of-the-week/desktop/potw-desktop@2x.jpg 2x" />
-              <source media="(min-width: 768px)" srcset="img/content/product-of-the-week/tablet/potw-tablet.jpg, img/content/product-of-the-week/tablet/potw-tablet@2x.jpg 2x" />
-              <img class="product-of-the-week__photo" src="img/content/product-of-the-week/mobile/potw-mobile.jpg" alt="Изображение с товаром недели." srcset="img/content/product-of-the-week/mobile/potw-mobile@2x.jpg 2x" width="260" height="315" />
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/product-of-the-week/desktop/potw-desktop.webp, img/content/product-of-the-week/desktop/potw-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/product-of-the-week/tablet/potw-tablet.webp, img/content/product-of-the-week/tablet/potw-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/product-of-the-week/mobile/potw-mobile.webp, img/content/product-of-the-week/mobile/potw-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/content/product-of-the-week/desktop/potw-desktop.jpg, img/content/product-of-the-week/desktop/potw-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/product-of-the-week/tablet/potw-tablet.jpg, img/content/product-of-the-week/tablet/potw-tablet@2x.jpg 2x">
+              <img class="product-of-the-week__photo" src="img/content/product-of-the-week/mobile/potw-mobile.jpg" alt="Изображение с товаром недели." srcset="img/content/product-of-the-week/mobile/potw-mobile@2x.jpg 2x" width="260" height="315">
             </picture>
             <div class="product-of-the-week__buy-section">
               <span class="product-of-the-week__price">Цена: 990 руб.</span>
@@ -139,28 +141,28 @@
               <li class="advantages__item">
                 <p class="advantages__description">
                   Экологически&nbsp;
-                  <br />
+                  <br>
                   чистые материалы
                 </p>
               </li>
               <li class="advantages__item">
                 <p class="advantages__description">
                   Скандинавский стиль&nbsp;
-                  <br />
+                  <br>
                   по российской цене
                 </p>
               </li>
               <li class="advantages__item">
                 <p class="advantages__description">
                   Увеличивает лайки&nbsp;
-                  <br />
+                  <br>
                   на фотографиях
                 </p>
               </li>
               <li class="advantages__item">
                 <p class="advantages__description">
                   Связано вручную&nbsp;
-                  <br />
+                  <br>
                   с любовью и умилением
                 </p>
               </li>
@@ -170,7 +172,7 @@
               <li class="advantages__item">
                 <p class="advantages__description">
                   Поставляется&nbsp;
-                  <br />
+                  <br>
                   в подарочной упаковке
                 </p>
               </li>
@@ -184,11 +186,11 @@
             <h2 class="reviews__title second-title">Отзывы</h2>
             <h3 class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как&nbsp;
-              <br class="reviews__br-desktop" />
+              <br class="reviews__br-desktop">
               у популярных инстамамочек.&nbsp;
-              <br class="reviews__br-mobile" />
+              <br class="reviews__br-mobile">
               В отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp;
-              <br class="reviews__br-mobile" />
+              <br class="reviews__br-mobile">
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </h3>
             <div class="reviews__author-section">
@@ -223,9 +225,9 @@
                 <div class="contacts__type">адрес:</div>
                 <div class="contacts__information">
                   г. Санкт-Петербург&nbsp;
-                  <br />
+                  <br>
                   ул. Большая Конюшенная&nbsp;
-                  <br />
+                  <br>
                   д. 19/8, офис 101
                 </div>
               </li>
@@ -271,7 +273,7 @@
           </ul>
           <a class="social__developer" href="https://htmlacademy.ru/">
             <p class="social__developer-title">Разработано</p>
-            <svg class="social__developer-icon" aria-label="Домашняя страница Html-academy." height="35" width="27" role="img">
+            <svg class="social__developer-icon" role="img" aria-label="Домашняя страница Html-academy." height="35" width="27">
               <use xlink:href="./img/sprite.svg#social-logo-developer"></use>
             </svg>
           </a>
@@ -282,7 +284,7 @@
       <div class="modal-container__wrapper">
         <h2 class="modal-container__title">
           Добавить&nbsp;
-          <br class="modal-container__br-mobile" />
+          <br class="modal-container__br-mobile">
           в корзину
         </h2>
         <p class="modal-container__description">Выберите размер:</p>
@@ -291,15 +293,15 @@
             <legend class="modal-container__buttons-legend">Варианты размера</legend>
             <ul class="modal-container__buttons-list">
               <li class="modal-container__buttons-item">
-                <input class="modal-container__input modal-container__input--option-one" id="s" name="size" type="radio" value="s" checked="checked" />
+                <input class="modal-container__input modal-container__input--option-one" id="s" name="size" type="radio" value="s" checked="checked">
                 <label class="modal-container__label modal-container__label--option-one" for="s">S</label>
               </li>
               <li class="modal-container__buttons-item">
-                <input class="modal-container__input modal-container__input--option-two" id="m" name="size" type="radio" value="m" />
+                <input class="modal-container__input modal-container__input--option-two" id="m" name="size" type="radio" value="m">
                 <label class="modal-container__label modal-container__label--option-two" for="m">M</label>
               </li>
               <li class="modal-container__buttons-item">
-                <input class="modal-container__input modal-container__input--option-three" id="l" name="size" type="radio" value="l" />
+                <input class="modal-container__input modal-container__input--option-three" id="l" name="size" type="radio" value="l">
                 <label class="modal-container__label modal-container__label--option-three" for="l">L</label>
               </li>
             </ul>

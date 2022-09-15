@@ -77,9 +77,9 @@ $footer-logo-color: #000000;
 $footer-logo-color-hover: #46c1ae;
 $footer-logo-color-active: rgba($footer-logo-color-hover, 30%);
 // modal
-$modal-size-select-text-color:#62d1ba;
+$modal-size-select-text-color: #62d1ba;
 $modal-size-select-stroke-color: rgba(#ffffff, 10%);
-$modal-size-select-stroke-color-hover:rgba(#ffffff, 30%);
+$modal-size-select-stroke-color-hover: rgba(#ffffff, 30%);
 $modal-size-select-stroke-color-active: #62d1ba;
 // form
 $form-stroke-color: #000000;
@@ -99,35 +99,35 @@ $reviews-arrow-active-color: rgba($reviews-arrow-color, 30%);
 $reviews-arrow-disabled-color: rgba($reviews-arrow-color, 10%);
 // email
 $email-color: #444444;
-$email-stroke-color:#62d1ba;
+$email-stroke-color: #62d1ba;
 $email-hover-color: #46c1ae;
-$email-hover-stroke-color:#46c1ae;
+$email-hover-stroke-color: #46c1ae;
 $email-active-color: #46c1ae;
-$email-active-stroke-color:rgba(#46c1ae, 10%);
+$email-active-stroke-color: rgba(#46c1ae, 10%);
 // socials
-$footer-socials-backgroun-color:#f1f1f1;
+$footer-socials-backgroun-color: #f1f1f1;
 $social-color: #231f20;
-$social-hover-color:#46c1ae;
+$social-hover-color: #46c1ae;
 $social-active-color: rgba(#46c1ae, 30%);
 // developer
 $developer-divider: #e5e5e5;
-$developer-color:#63d1bb;
-$developer-hover-color:#46c1ae;
-$developer-active-color:rgba(#46c1ae, 30%);
+$developer-color: #63d1bb;
+$developer-hover-color: #46c1ae;
+$developer-active-color: rgba(#46c1ae, 30%);
 $developer-text-color: #000000;
 // form
 $form-section-name-color: $brand-color;
 $form-label-color: #000000;
 $form-radio-pin-color: #62d1ba;
 $form-radio-stroke-color: #444444;
-$form-radio-stroke-hover-color:#62d1ba;
+$form-radio-stroke-hover-color: #62d1ba;
 $form-radio-stroke-active-color: rgba(#000000, 30%);
-$form-radio-stroke-focus-color:#62d1ba;
+$form-radio-stroke-focus-color: #62d1ba;
 $form-radio-stroke-disabled-color: rgba(#000000, 10%);
 $form-checkbox-stroke-color: #444444;
-$form-checkbox-stroke-hover-color:#62d1ba;
+$form-checkbox-stroke-hover-color: #62d1ba;
 $form-checkbox-stroke-active-color: rgba(#000000, 30%);
-$form-checkbox-stroke-focus-color:#62d1ba;
+$form-checkbox-stroke-focus-color: #62d1ba;
 $form-checkbox-stroke-disabled-color: rgba(#000000, 10%);
 $form-input-stroke-color: #000000;
 $form-input-stroke-hover-color: #62d1ba;
