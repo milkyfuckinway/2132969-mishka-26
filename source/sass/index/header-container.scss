@@ -48,13 +48,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/content/hero/desktop/hero-desktop.png");
+    background-image: url("../img/content/hero/desktop/hero-desktop.jpg");
     background-position: center 0;
     background-size: 1150px;
     min-height: 626px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/content/hero/desktop/hero-desktop@2x.png");
+      background-image: url("../img/content/hero/desktop/hero-desktop@2x.jpg");
     }
   }
 }
@@ -114,7 +114,6 @@
     transform: translateY(-5px);
   }
 
-
   &--option-one {
     background-color: $menu-button-color;
   }
@@ -134,9 +133,10 @@
   }
 
   &--option-one::after {
-    background-image: url("/img/decor/menu-buttons-icon/interior-icon.svg");
+    background-image: url("../img/decor/menu-buttons-icon/interior-icon.svg");
     background-repeat: no-repeat;
     content: "";
+    flex-shrink: 0;
     height: 62px;
     opacity: 0.5;
     width: 40px;
@@ -173,9 +173,10 @@
   }
 
   &--option-two::after {
-    background-image: url("/img/decor/menu-buttons-icon/toy-icon.svg");
+    background-image: url("../img/decor/menu-buttons-icon/toy-icon.svg");
     background-repeat: no-repeat;
     content: "";
+    flex-shrink: 0;
     height: 60px;
     opacity: 0.5;
     width: 60px;
@@ -192,7 +193,6 @@
   &--option-two:active::after {
     opacity: 0.3;
   }
-
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

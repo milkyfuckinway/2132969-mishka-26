@@ -26,20 +26,47 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 92px 46px;
+  }
+}
+
+.modal-container__br-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .modal-container__title {
-  margin: 28px 0 14px 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 11px;
+  }
 }
 
 .modal-container__description {
   @include open-sans;
   font-size: 15px;
   line-height: 30px;
-  margin: 0 0 22px;
+  margin: 0 auto;
+  margin-bottom: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 19px;
+  }
 }
 
 .modal-container__options {
@@ -56,21 +83,23 @@
   padding: 0;
 }
 
-.modal-container__buttons-item {
-  display: flex;
-
-  &:not(:last-child) {
-    margin-right: 6px;
-  }
-}
-
 .modal-container__buttons-list {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  gap: 6px;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
+}
+
+.modal-container__buttons-item {
+  display: flex;
 }
 
 .modal-container__buttons-legend {
@@ -91,11 +120,14 @@
   border: 2px solid $modal-button-color;
   display: flex;
   font-size: 17px;
-  height: 48px;
   justify-content: center;
   line-height: 16px;
-  max-width: 112px;
-  min-width: 78px;
+  min-height: 48px;
+  width: 78px;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
 
   &:hover {
     border: 2px solid $modal-button-hover-color;
@@ -112,9 +144,12 @@
   font-size: 17px;
   line-height: 16px;
   margin: 0 auto;
-  max-width: 350px;
-  min-width: 260px;
   outline: none;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 
   &:hover {
     background-color: $modal-submit-button-background-hover-color;

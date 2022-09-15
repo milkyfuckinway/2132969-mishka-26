@@ -2,26 +2,10 @@ $mobile: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-container: 260px;
-$menu-shadow: 0 1px 0 rgba(236, 236, 236, 1), inset 0 1px 0  rgba(236, 236, 236, 1);
+$menu-shadow: 0 1px 0 rgba(236, 236, 236, 1), inset 0 1px 0 rgba(236, 236, 236, 1);
 $catalog-shadow-hover: 0 6px 10px rgba(0, 0, 0, 0.1);
 $catalog-shadow-active: 0 3px 5px rgba(0, 0, 0, 0.1);
 $modal-shadow: 0 5px 10px 0 rgba(#000101, 25%);
-
-// * {
-//   outline: 1px solid rgba(#000000, 20%);
-//   outline-offset: -1px;
-// }
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
 
 @mixin open-sans {
   font-family: "Open-sans", "Arial", sans-serif;

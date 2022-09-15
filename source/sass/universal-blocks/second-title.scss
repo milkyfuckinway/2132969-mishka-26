@@ -1,0 +1,6 @@
+.second-title {
+  @include open-sans-bold;
+  color: $main-text-color;
+  font-size: 25px;
+  line-height: 30px;
+}
