@@ -100,7 +100,7 @@
 }
 
 .contacts__type {
-  width: 30%;
+  width: calc(30% - 1px);
 
   @media (min-width: $tablet-width) {
     width: 23%;
@@ -112,7 +112,7 @@
 }
 
 .contacts__information {
-  width: 70%;
+  width: calc(70% + 1px);
 
   @media (min-width: $tablet-width) {
     width: 77%;

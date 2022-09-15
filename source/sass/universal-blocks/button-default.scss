@@ -27,6 +27,11 @@
     color: $default-button-text-active-color;
   }
 
+  &:focus {
+    background-color: $default-button-background-hover-color;
+    color: $default-button-text-hover-color;
+  }
+
   &:disabled {
     background-color: $default-button-background-disabled-color;
     color: $default-button-text-disabled-color;
